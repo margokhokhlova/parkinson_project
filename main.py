@@ -1,4 +1,5 @@
 from utils.data_loader import PatientsRawData
+from utils.preprocessing import preprocess_signal
 import os 
 
 if __name__ == "__main__":
@@ -13,5 +14,10 @@ if __name__ == "__main__":
     # filter out unused data
     data.get_emg_data()
     print(len(data.X))
+    data.convert_to_numpy()
     print(len(data.X[0]), len(data.X[0][0]))
+    # process one signal
+    signal_emg = data.X[0][0]
+    print(signal_emg.shape)
+    processed_signal =  preprocess_signal(signal_emg,  SamplingRate=500,  LF=60, HF=240, frequences_to_filter = [50, 100, 150, 200 ], order_butter=4, save_plot=True) 
 

@@ -57,7 +57,11 @@ class PatientsRawData:
         for i in range(len(self.X)):
             df = self.X[i]
             df = df.drop(columns=eeg_columns)
-            self.X[i]=df #.to_numpy().transpose() # and converts data to numpy array for the following training
+            self.X[i]=df 
+
+    def convert_to_numpy(self):
+        for i in range(len(self.X)):
+            self.X[i] = self.X[i].to_numpy().transpose() # and converts data to numpy array for the following training
 
     def shuffle_data(self, random_state=0):
         self.X, self.Y = shuffle(self.X, self.Y, random_state)
