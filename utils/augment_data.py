@@ -1,10 +1,11 @@
 import itertools
+import numpy as np
 
 
-def augment_data(X, model_type=4):
+def get_augmentation_indexes(X, model_type=4):
     """Function takes the data for one group of patients
-    and augments them following this rule:
-    take all
+    and all possible permutation indexes which are then used for
+    data augmentaion.
     """
     if model_type == 4:
         num_patients = len(X)
@@ -18,8 +19,24 @@ def augment_data(X, model_type=4):
         raise NameError
     return possible_indexes
 
+def augment_data(X, augmentation_indexes):
+    ''' Perform the data augmentation using augmentation indexes'''
+    augmented_x = []
+    for new_pair in augmentation_indexes:
+        i =  new_pair[0]
+        j = new_pair[1]
+        new_patient = np.zeros((len(X[0]), len(X[0][0])))
+        print(new_patient.shape)
+        new_patient[0,:] = X[i][0] # left hand
+        new_patient[2,:] = X[i][2] # left leg
+        new_patient[1,:] = X[j][1] # right hand
+        new_patient[3,:] = X[j][3] # right leg
+        augmented_x.append(new_patient)
+    return augmented_x
+
+
 
 if __name__ == "__main__":
-    L = augment_data(20)
+    L = get_augmentation_indexes(20)
     print(len(L))
     print(L)

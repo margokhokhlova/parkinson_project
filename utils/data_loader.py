@@ -25,8 +25,8 @@ headers = [
     "EMG1",  # 18 канал - это левая рука испытуемого
     "EMG2",  # 19 - это правая рука испытуемого
     "EMG3",  # 20 - это левая нога испытуемого
-    "EMG4",
-]  # 21 - правая нога испытуемого
+    "EMG4", # 21 - правая нога испытуемого
+]  
 
 eeg_columns = [
     "FP1",
@@ -92,3 +92,4 @@ class PatientsRawData:
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
             self.X, self.Y, stratify=self.Y, test_size=test_size
         )
+
