@@ -30,12 +30,12 @@ def preprocess_signal(
     HF=240,
     frequences_to_filter=[50, 100, 150, 200],
     order_butter=4,
-    save_plot=False,
+    save_plot=False, apply_envelope=True
 ):
     """detrend, apply notch filter to remove given frequences, apply butter filter and return the envelop of processed signal"""
     print("SHAPE", original_signal.shape)
     signal_emg_detrended = signal.detrend(original_signal)
-    # apply notch
+    # apply notch - TODO one function pass
     notch_filtered = signal_emg_detrended.copy()
     for filtered_frequency in frequences_to_filter:
         notch_filtered = notch_filtering(
@@ -47,8 +47,9 @@ def preprocess_signal(
         notch_filtered, LF, HF, SamplingRate, order_butter
     )
     # evelope
-    processed_H = signal.hilbert(processed)
-    amplitude_envelope = np.abs(processed_H)
+    if apply_envelope:
+        processed = signal.hilbert(processed)
+        processed = np.abs(processed)
     if save_plot:
         # final spectr after processing
         from matplotlib import pyplot as plt
@@ -68,4 +69,4 @@ def preprocess_signal(
         plt.legend(loc="upper left")
         plt.show()
         plt.savefig("figures/processed_vs_original.png")
-    return amplitude_envelope
+    return processed

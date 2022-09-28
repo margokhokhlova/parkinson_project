@@ -26,7 +26,7 @@ def augment_data(X, augmentation_indexes):
         i =  new_pair[0]
         j = new_pair[1]
         new_patient = np.zeros((len(X[0]), len(X[0][0])))
-        print(new_patient.shape)
+        # print(new_patient.shape)
         new_patient[0,:] = X[i][0] # left hand
         new_patient[2,:] = X[i][2] # left leg
         new_patient[1,:] = X[j][1] # right hand
