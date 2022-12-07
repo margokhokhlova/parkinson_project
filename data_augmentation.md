@@ -89,23 +89,23 @@ The method mentionned in the review of literature in  paper 3. The authors menti
 What is this paper about:
 
 Dai et al.  performed similar to [4] rearrangements of waveform components in both the
-time and frequency domains to add three times the amount of initially collected EEG data, finding that this approach could improve the  EEG motor imagery classification accuracy of a Hybrid Scale Convolutional Neural Network. This work showed that data augmentation allowed the model to improve the classification of data
-for individual subjects that were specifically challenging in terms of the model’s classification ability.
+time and frequency domains to add three times the amount of initially collected EEG data, finding that this approach could improve the  EEG motor imagery classification accuracy of a Hybrid Scale Convolutional Neural Network. This work showed that data augmentation allowed the model to improve the classification of data for individual subjects that were specifically challenging in terms of the model’s classification ability. 
 
 
 Conclusion:
-The method mentionned in the review of literature in  paper 3. The paper seems to be interesting by the abstract, since they also use a CNN for the classification, and they convert the signal to an image.
-#TODO: to find and check this one in details
+The method mentionned in the review of literature in  paper 3. The paper seems to be interesting by the abstract, since they also use a CNN for the classification, and they convert the signal to an image. Again EEG data.
+#TODO: to find and check this one in details - the paper is not in an open access, unfortunately.
 
 ### 6 [A New Method to Generate Artificial Frames Using the Empirical Mode Decomposition for an EEG-Based Motor Imagery BCI] (https://www.frontiersin.org/articles/10.3389/fnins.2018.00308/full)
 
 Dinares-Ferran et al. decomposed EEG signals into Intrinsic Mode Functions and
 constructed synthetic data frames by arranging these IMFs into new combinations, demonstrating improvements of classification performance of motor imagery based BCIs while including these new signals.
-The proposed method is based on Empirical Mode Decomposition (EMD). 
+The proposed method is based on Empirical Mode Decomposition (EMD). Using the EMD approach, the new artificial EEG signals can be created by combining some IMFs from different real EEG signals.   
 
 Conclusion:
 
 Original method. The Empirical Mode Decomposition (EMD) method is based on an algorithm that allows users to conduct a data-driven analysis that is more fitting with non-stationary signals that have changes in the frequency structure within a short period of time.
+The description seems to be similar to wavelets transformation, but I do not really understand it.
 
 ## Datasets:
 
