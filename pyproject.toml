@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "kotelnikov"
+version = "0.1.0"
+description = ""
+authors = ["Margarita Khokhlova <margarita.khokhlova@fujitsu.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+scikit-learn = "^1.2.1"
+xgboost = "^1.7.3"
+jupyter = "^1.0.0"
+matplotlib = "^3.6.3"
+tdqm = "^0.0.1"
+pandas = "^1.5.3"
+imbalanced-learn = "^0.10.1"
+openpyxl = "^3.1.2"
+pandoc = "^2.3"
+nbconvert = {extras = ["webpdf"], version = "^7.16.3"}
+pyppeteer = "^2.0.0"
+torch = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
