@@ -47,6 +47,6 @@ def train_model(model, train_loader, num_epochs=10, path='results/model.pth'):
         
         epoch_loss = running_loss / len(train_loader)
         epoch_accuracy = correct_predictions / total_samples
-
-        print(f'Epoch {epoch+1}, Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.4f}')
+        if epoch%100 == 1:
+            print(f'Epoch {epoch+1}, Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.4f}')
     torch.save(model, path)

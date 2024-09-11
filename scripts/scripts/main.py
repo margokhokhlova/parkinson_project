@@ -40,6 +40,8 @@ def main():
     print(f"Data Path: {data_path}")
     print(f"Feature_names: {feature_names}")
 
+
+    best_model_index_accuracy = {}
     for pair in combinations:          
         new_path=save_path+f'/{pair[0]}_{pair[1]}'       
         print(f'Starting to train for the first pair {pair[0]}_{pair[1]}, results are saved {new_path}')
@@ -77,19 +79,33 @@ def main():
         y_quant = np.concatenate((y_pdl, y_etl))
 
         # Split the data into training and test sets
-        X_train, X_test, y_train, y_test = train_test_split(X_quant, y_quant, test_size=0.2, random_state=42)
+        # Store the accuracy scores for each run
+        accuracies = []
 
-        # Initialize and train the classifier (Logistic Regression in this example)
-        classifier = LogisticRegression()
-        classifier.fit(X_train, y_train)
+        # Run the experiment 50 times on different train and test sets
+        for _ in range(50):
+            # Split the dataset into training and testing sets
+            X_train, X_test, y_train, y_test = train_test_split(X_quant, y_quant, test_size=0.2)
 
-        # Predict on the test set
-        y_pred = classifier.predict(X_test)
+            # Initialize and train the classifier (Logistic Regression in this example)
+            classifier = LogisticRegression()
+            classifier.fit(X_train, y_train)
 
-        # Evaluate the classifier
-        accuracy = accuracy_score(y_test, y_pred)
-        print(f"Classification accuracy: {accuracy:.2f} for features {feature_names[pair[0]]} and {feature_names[pair[1]]}")
+            # Predict on the test set
+            y_pred = classifier.predict(X_test)
 
+            # Evaluate the classifier
+            accuracy = accuracy_score(y_test, y_pred)
+            accuracies.append(accuracy)
+
+        # Calculate the mean and standard deviation of the accuracies
+        mean_accuracy = np.mean(accuracies)
+        std_accuracy = np.std(accuracies)
+
+        # Report the results
+        print(f"{feature_names[pair[0]]}_{feature_names[pair[1]]} Mean classification accuracy: {mean_accuracy:.2f}")
+        print(f"Standard deviation of accuracy: {std_accuracy:.2f}")
+    best_model_index_accuracy[f'{feature_names[pair[0]]}_{feature_names[pair[1]]}'] = mean_accuracy
 
 if __name__ == "__main__":
     main()
