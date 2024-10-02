@@ -1,7 +1,7 @@
 settings:
   learning_rate: 0.001
   batch_size: 64
-  num_epochs: 500
+  num_epochs: 2000
   model_name: "my_cool_model"
   data_path: '/home/mkhokhlo/projects/kotelnikov/data_lstm_august24_PDET_left_right.csv'
   save_path: '/home/mkhokhlo/projects/kotelnikov/scripts/scripts/results'

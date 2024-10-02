@@ -20,7 +20,7 @@ def get_feature(index_f, data_path = 'C:/Users/khokhlovam/Documents/kotelnikov/d
             X_PDL.append(feat[:min_len_established])            
         elif label == 'ETLeft':
             X_ETL.append(feat[:min_len_established]) 
-        if patient_i == 1:
-            print(f'verification {label},  {feat_range[2]}')          
+
+        #print(f'Patient{i} verification {label},  {feat_range[2]}')          
         patient_i += 1
     return X_PDL, X_ETL
