@@ -19,6 +19,7 @@ pandoc = "^2.3"
 nbconvert = {extras = ["webpdf"], version = "^7.16.3"}
 pyppeteer = "^2.0.0"
 torch = "^2.4.0"
+torchviz = "^0.0.2"
 
 
 [build-system]

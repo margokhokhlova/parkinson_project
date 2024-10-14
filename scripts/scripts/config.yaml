@@ -1,10 +1,10 @@
 settings:
-  learning_rate: 0.001
-  batch_size: 64
-  num_epochs: 2000
+  learning_rate: 0.0001
+  batch_size: 512
+  num_epochs: 1000
   model_name: "my_cool_model"
   data_path: '/home/mkhokhlo/projects/kotelnikov/data_lstm_august24_PDET_left_right.csv'
-  save_path: '/home/mkhokhlo/projects/kotelnikov/scripts/scripts/results'
+  save_path: '/home/mkhokhlo/projects/kotelnikov/scripts/scripts/results/multihead'
   possible_pairs: 
   - [0, 1]
   - [0, 2]

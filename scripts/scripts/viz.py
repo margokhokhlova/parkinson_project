@@ -69,10 +69,12 @@ def viz_quantity_features(X_features, label, model, save_path):
     # Store results for visualization
     pd_counts = []
     et_counts = []
+    print(f'input shape {X_features.shape}')
 
     for patient_idx, patient_data in enumerate(X_features):
         pd_like_count = 0
         et_like_count = 0
+        print(patient_data.shape)
 
         for sample_idx, sample in enumerate(patient_data):
             sample_tensor = torch.from_numpy(sample).float().unsqueeze(0)
