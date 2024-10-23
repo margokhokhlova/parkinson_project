@@ -1,9 +1,13 @@
 import yaml
 import os
 import torch
+import sys
+print(sys.path)
+sys.path.append('/home/mkhokhlo/projects/kotelnikov/scripts/scripts') #TODO - clean it
+
 import numpy as np
 from torch.utils.data import TensorDataset, DataLoader
-from models import MultiHeadNN, MultiHeadNN_Alex, train_model
+from models import SimpleBinaryClassifier, train_model
 import viz
 from feature_selection import get_feature
 
@@ -83,14 +87,14 @@ def main():
     #     print(y.shape)
     #     break
 
-    model=MultiHeadNN_Alex(input_dim=1, hidden_dim=1, num_heads=14)
-    train_model(model, dataloader, num_epochs=num_epochs, path=None)
-    #model = torch.load(save_path+'/multiAlex_14.pth', weights_only=False)
+    model=SimpleBinaryClassifier(input_dim=14)
+    train_model(model, dataloader, num_epochs=num_epochs, path=save_path+'/vanilla_14.pth')
+    model = torch.load(save_path+'/vanilla_14.pth', weights_only=False)
     # now let's try to run the tests
     PDL_features =  np.swapaxes(np.swapaxes(PDL_features, 0, 1), 1,2)
     ETL_features =  np.swapaxes(np.swapaxes(ETL_features, 0, 1),1,2)
-    pdl_classif = viz.viz_quantity_features(PDL_features, 'PDL', model,save_path+'/PDL_quant_14_ALEX')
-    etl_classif = viz.viz_quantity_features(ETL_features, 'ETL', model,save_path+'/ETL_quant_14_ALEX')
+    pdl_classif = viz.viz_quantity_features(PDL_features, 'PDL', model,save_path+'/PDL_quant_14_')
+    etl_classif = viz.viz_quantity_features(ETL_features, 'ETL', model,save_path+'/ETL_quant_14_')
 
 if __name__ == "__main__":
     main()
