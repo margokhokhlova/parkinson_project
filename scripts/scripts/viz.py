@@ -115,3 +115,32 @@ def viz_quantity_features(X_features, label, model, save_path):
     plt.clf()
     patient_like_counts = np.array(patient_like_counts)# Convert the patient_like_counts to a numpy array
     return patient_like_counts
+
+def plot_joudens(pdl_classif, etl_classif, optimal_threshold, thresholds, youden_j, optimal_idx, save_path):
+    
+    # Plot the histogram with the optimal threshold line
+    plt.figure(figsize=(12, 6))
+
+    # Plot histogram for both classes
+    plt.hist(pdl_classif, bins=30, alpha=0.5, label='PDL Class', color='red')
+    plt.hist(etl_classif, bins=30, alpha=0.5, label='ETL Class', color='blue')
+
+    # Add a vertical line for the optimal threshold
+    plt.axvline(optimal_threshold, color='green', linestyle='--', label=f'Optimal Threshold: {optimal_threshold:.2f}')
+
+    # Add labels and legend
+    plt.xlabel('Histogram Values')
+    plt.ylabel('Frequency')
+    plt.title(f'Histogram with Optimal Threshold Using Youden’s J Statistic. Maximum Youdens J statistic: {youden_j[optimal_idx]}')
+    plt.legend()
+    plt.savefig(save_path)
+
+    # Secondary plot of Youden’s J statistic vs. thresholds
+    plt.figure(figsize=(10, 4))
+    plt.plot(thresholds, youden_j, label="Youden's J Statistic", color='purple')
+    plt.axvline(optimal_threshold, color='green', linestyle='--', label=f'Optimal Threshold: {optimal_threshold:.2f}')
+    plt.xlabel('Threshold')
+    plt.ylabel("Youden's J Statistic")
+    plt.title("Youden's J Statistic vs. Thresholds")
+    plt.legend()
+    #plt.savefig(save_path)
