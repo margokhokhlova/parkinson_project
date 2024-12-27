@@ -1,0 +1,2808 @@
+Model:  tensor([[0.4678]], grad_fn=<SigmoidBackward0>)
+Learning Rate: 0.01
+Batch Size: 512
+Number of Epochs: 10
+Model Name: my_cool_model
+Data Path: scripts/scripts/data/data_lstm_august24_PDET_left_right.csv
+Feature_names: ['ampl', 'BandwidthesHz', 'Bottom', 'flash_periods', 'flash_seconds', 'frac_band', 'freq', 'left', 'phase', 'Psi0', 'right', 'timeSignal', 'top', 'time_sincelast']
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 54, 44, 51, 48, 46, 49, 58, 67, 56, 63, 62, 64, 57]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6809, Accuracy: 0.5000
+Epoch 4, Loss: 49.7861, Accuracy: 0.5000
+Epoch 6, Loss: 49.7831, Accuracy: 0.5000
+Epoch 8, Loss: 50.1331, Accuracy: 0.5000
+Epoch 10, Loss: 50.0398, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Final accuracy is 0 0.5
+Random data selection interation time: 0 hours, 10 minutes, 26.15 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 49, 51, 44, 45, 46, 43, 53, 68, 64, 66, 63, 62, 59, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.5911, Accuracy: 0.5000
+Epoch 4, Loss: 49.7245, Accuracy: 0.5000
+Epoch 6, Loss: 49.4087, Accuracy: 0.5000
+Epoch 8, Loss: 49.2371, Accuracy: 0.5000
+Epoch 10, Loss: 49.0520, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 49 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Final accuracy is 1 0.5
+Random data selection interation time: 0 hours, 10 minutes, 7.82 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 47, 52, 44, 48, 54, 41, 66, 57, 58, 69, 65, 60, 68]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7724, Accuracy: 0.5000
+Epoch 4, Loss: 49.7422, Accuracy: 0.5000
+Epoch 6, Loss: 48.3886, Accuracy: 0.5000
+Epoch 8, Loss: 43.8827, Accuracy: 0.5000
+Epoch 10, Loss: 18.8487, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Final accuracy is 2 0.5
+Random data selection interation time: 0 hours, 10 minutes, 8.32 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 50, 51, 44, 52, 53, 43, 60, 66, 56, 58, 61, 63, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1175, Accuracy: 0.5000
+Epoch 4, Loss: 49.8825, Accuracy: 0.5000
+Epoch 6, Loss: 49.9832, Accuracy: 0.5000
+Epoch 8, Loss: 50.0000, Accuracy: 0.5000
+Epoch 10, Loss: 50.1007, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Final accuracy is 3 0.5
+Random data selection interation time: 0 hours, 10 minutes, 8.01 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 53, 45, 43, 51, 50, 49, 62, 61, 59, 65, 64, 68, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.2015, Accuracy: 0.5000
+Epoch 4, Loss: 50.1007, Accuracy: 0.5000
+Epoch 6, Loss: 50.0672, Accuracy: 0.5000
+Epoch 8, Loss: 49.8153, Accuracy: 0.5000
+Epoch 10, Loss: 49.9832, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Final accuracy is 4 0.5
+Random data selection interation time: 0 hours, 10 minutes, 19.95 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 51, 47, 53, 42, 44, 46, 56, 64, 62, 58, 68, 61, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.2496, Accuracy: 0.5000
+Epoch 4, Loss: 48.4821, Accuracy: 0.5000
+Epoch 6, Loss: 46.7534, Accuracy: 0.5000
+Epoch 8, Loss: 40.3397, Accuracy: 0.5000
+Epoch 10, Loss: 26.0626, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [1, 599], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Final accuracy is 5 0.5
+Random data selection interation time: 0 hours, 10 minutes, 24.69 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 52, 54, 45, 50, 47, 49, 62, 59, 67, 66, 69, 58, 61]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6891, Accuracy: 0.5000
+Epoch 4, Loss: 49.7366, Accuracy: 0.5000
+Epoch 6, Loss: 49.5413, Accuracy: 0.5000
+Epoch 8, Loss: 49.2894, Accuracy: 0.5000
+Epoch 10, Loss: 48.3945, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Final accuracy is 6 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.14 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 52, 48, 53, 54, 43, 51, 67, 65, 57, 60, 69, 61, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6052, Accuracy: 0.5000
+Epoch 4, Loss: 49.4915, Accuracy: 0.5000
+Epoch 6, Loss: 49.2468, Accuracy: 0.5000
+Epoch 8, Loss: 48.6339, Accuracy: 0.5000
+Epoch 10, Loss: 48.0498, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Final accuracy is 7 0.5
+Random data selection interation time: 0 hours, 10 minutes, 20.61 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 42, 41, 48, 45, 49, 44, 59, 68, 61, 58, 65, 63, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.7611, Accuracy: 0.5000
+Epoch 4, Loss: 46.3521, Accuracy: 0.5000
+Epoch 6, Loss: 25.5956, Accuracy: 0.5000
+Epoch 8, Loss: 1.0357, Accuracy: 0.5375
+Epoch 10, Loss: 0.6448, Accuracy: 0.5720
+[[300, 300], [236, 364], [505, 95], [253, 347], [531, 69], [216, 384], [576, 24], [205, 395], [385, 215], [460, 140], [237, 363], [237, 363], [215, 385], [213, 387]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 528
+Patient 42 predicted PD  wavetrains 550
+Patient 41 predicted PD  wavetrains 588
+Patient 48 predicted PD  wavetrains 569
+Patient 45 predicted PD  wavetrains 481
+Patient 49 predicted PD  wavetrains 352
+Patient 44 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 219
+Patient 68 predicted PD  wavetrains 208
+Patient 61 predicted PD  wavetrains 223
+Patient 58 predicted PD  wavetrains 234
+Patient 65 predicted PD  wavetrains 309
+Patient 63 predicted PD  wavetrains 215
+Patient 69 predicted PD  wavetrains 228
+Final accuracy is 8 1.0
+Random data selection interation time: 0 hours, 9 minutes, 47.52 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 42, 47, 48, 44, 45, 54, 56, 57, 60, 66, 67, 64, 62]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9328, Accuracy: 0.5000
+Epoch 4, Loss: 49.8657, Accuracy: 0.5000
+Epoch 6, Loss: 50.0672, Accuracy: 0.5000
+Epoch 8, Loss: 49.9832, Accuracy: 0.5000
+Epoch 10, Loss: 50.0840, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Final accuracy is 9 0.5
+Random data selection interation time: 0 hours, 10 minutes, 13.52 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 48, 54, 53, 45, 50, 47, 42, 57, 63, 61, 56, 62, 68, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7215, Accuracy: 0.5000
+Epoch 4, Loss: 49.5868, Accuracy: 0.5000
+Epoch 6, Loss: 49.6431, Accuracy: 0.5000
+Epoch 8, Loss: 49.3739, Accuracy: 0.5000
+Epoch 10, Loss: 49.0004, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 48 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Final accuracy is 10 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.08 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 49, 47, 51, 48, 45, 43, 57, 65, 62, 56, 60, 69, 66]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.3081, Accuracy: 0.5000
+Epoch 4, Loss: 47.9532, Accuracy: 0.5000
+Epoch 6, Loss: 41.7834, Accuracy: 0.5000
+Epoch 8, Loss: 7.8106, Accuracy: 0.5000
+Epoch 10, Loss: 1.0133, Accuracy: 0.5117
+[[600, 0], [600, 0], [546, 54], [539, 61], [599, 1], [541, 59], [599, 1], [533, 67], [531, 69], [533, 67], [541, 59], [547, 53], [539, 61], [550, 50]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 586
+Patient 47 predicted PD  wavetrains 590
+Patient 51 predicted PD  wavetrains 594
+Patient 48 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 593
+Patient 43 predicted PD  wavetrains 569
+Patient 57 predicted PD  wavetrains 589
+Patient 65 predicted PD  wavetrains 583
+Patient 62 predicted PD  wavetrains 538
+Patient 56 predicted PD  wavetrains 533
+Patient 60 predicted PD  wavetrains 595
+Patient 69 predicted PD  wavetrains 540
+Patient 66 predicted PD  wavetrains 539
+Final accuracy is 11 0.7857142857142857
+Random data selection interation time: 0 hours, 10 minutes, 9.29 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 51, 45, 46, 49, 47, 53, 60, 69, 67, 57, 65, 63, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.0996, Accuracy: 0.5000
+Epoch 4, Loss: 48.8870, Accuracy: 0.5000
+Epoch 6, Loss: 48.4888, Accuracy: 0.5000
+Epoch 8, Loss: 46.6065, Accuracy: 0.5000
+Epoch 10, Loss: 40.1592, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Final accuracy is 12 0.5
+Random data selection interation time: 0 hours, 10 minutes, 16.02 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 50, 48, 44, 51, 43, 46, 59, 58, 67, 56, 66, 65, 68]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8825, Accuracy: 0.5000
+Epoch 4, Loss: 50.0672, Accuracy: 0.5000
+Epoch 6, Loss: 49.8321, Accuracy: 0.5000
+Epoch 8, Loss: 50.0336, Accuracy: 0.5000
+Epoch 10, Loss: 50.0168, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Final accuracy is 13 0.5
+Random data selection interation time: 0 hours, 10 minutes, 33.21 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 44, 52, 46, 47, 42, 43, 45, 69, 66, 59, 63, 57, 60, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.7080, Accuracy: 0.5000
+Epoch 4, Loss: 48.0790, Accuracy: 0.5000
+Epoch 6, Loss: 46.2149, Accuracy: 0.5000
+Epoch 8, Loss: 39.9300, Accuracy: 0.5000
+Epoch 10, Loss: 25.5520, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 44 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Final accuracy is 14 0.5
+Random data selection interation time: 0 hours, 10 minutes, 20.27 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 51, 53, 52, 44, 43, 49, 62, 61, 64, 59, 65, 63, 56]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 0.8505, Accuracy: 0.5364
+Epoch 4, Loss: 0.5322, Accuracy: 0.7424
+Epoch 6, Loss: 0.5192, Accuracy: 0.7695
+Epoch 8, Loss: 0.5187, Accuracy: 0.7727
+Epoch 10, Loss: 0.5175, Accuracy: 0.7721
+[[585, 15], [454, 146], [362, 238], [439, 161], [522, 78], [8, 592], [531, 69], [223, 377], [1, 599], [362, 238], [14, 586], [2, 598], [4, 596], [5, 595]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 47
+Patient 51 predicted PD  wavetrains 450
+Patient 53 predicted PD  wavetrains 7
+Patient 52 predicted PD  wavetrains 438
+Patient 44 predicted PD  wavetrains 599
+Patient 43 predicted PD  wavetrains 119
+Patient 49 predicted PD  wavetrains 154
+Patient 62 predicted PD  wavetrains 6
+Patient 61 predicted PD  wavetrains 1
+Patient 64 predicted PD  wavetrains 13
+Patient 59 predicted PD  wavetrains 3
+Patient 65 predicted PD  wavetrains 97
+Patient 63 predicted PD  wavetrains 4
+Patient 56 predicted PD  wavetrains 2
+Final accuracy is 15 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 15.63 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 49, 51, 41, 54, 52, 43, 47, 67, 56, 63, 59, 68, 61, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 27.1233, Accuracy: 0.5000
+Epoch 4, Loss: 13.8945, Accuracy: 0.5000
+Epoch 6, Loss: 1.1757, Accuracy: 0.5137
+Epoch 8, Loss: 0.5978, Accuracy: 0.6438
+Epoch 10, Loss: 0.5927, Accuracy: 0.6585
+[[467, 133], [600, 0], [368, 232], [51, 549], [534, 66], [0, 600], [7, 593], [251, 349], [1, 599], [407, 193], [1, 599], [11, 589], [8, 592], [2, 598]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 49 predicted PD  wavetrains 156
+Patient 51 predicted PD  wavetrains 475
+Patient 41 predicted PD  wavetrains 591
+Patient 54 predicted PD  wavetrains 539
+Patient 52 predicted PD  wavetrains 435
+Patient 43 predicted PD  wavetrains 122
+Patient 47 predicted PD  wavetrains 449
+Patient 67 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 1
+Patient 63 predicted PD  wavetrains 1
+Patient 59 predicted PD  wavetrains 2
+Patient 68 predicted PD  wavetrains 2
+Patient 61 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 128
+Final accuracy is 16 0.8571428571428571
+Random data selection interation time: 0 hours, 10 minutes, 8.54 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 54, 50, 45, 41, 48, 44, 56, 69, 64, 65, 61, 63, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6170, Accuracy: 0.5000
+Epoch 4, Loss: 49.4750, Accuracy: 0.5000
+Epoch 6, Loss: 49.0351, Accuracy: 0.5000
+Epoch 8, Loss: 48.5933, Accuracy: 0.5000
+Epoch 10, Loss: 46.6726, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Final accuracy is 17 0.5
+Random data selection interation time: 0 hours, 10 minutes, 17.00 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 41, 53, 49, 43, 44, 42, 69, 68, 66, 59, 67, 62, 56]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7438, Accuracy: 0.5000
+Epoch 4, Loss: 49.5988, Accuracy: 0.5000
+Epoch 6, Loss: 49.1223, Accuracy: 0.5000
+Epoch 8, Loss: 47.7459, Accuracy: 0.5000
+Epoch 10, Loss: 35.0017, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Final accuracy is 18 0.5
+Random data selection interation time: 0 hours, 10 minutes, 14.75 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 47, 44, 48, 53, 51, 46, 57, 56, 60, 58, 66, 67, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7849, Accuracy: 0.5000
+Epoch 4, Loss: 49.7491, Accuracy: 0.5000
+Epoch 6, Loss: 49.5383, Accuracy: 0.5000
+Epoch 8, Loss: 49.2541, Accuracy: 0.5000
+Epoch 10, Loss: 48.4717, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Final accuracy is 19 0.5
+Random data selection interation time: 0 hours, 10 minutes, 9.89 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 48, 51, 42, 54, 50, 49, 41, 62, 63, 69, 65, 60, 68, 66]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.0530, Accuracy: 0.5000
+Epoch 4, Loss: 44.6806, Accuracy: 0.5000
+Epoch 6, Loss: 36.6678, Accuracy: 0.5000
+Epoch 8, Loss: 22.6859, Accuracy: 0.5000
+Epoch 10, Loss: 11.3050, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 48 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Final accuracy is 20 0.5
+Random data selection interation time: 0 hours, 10 minutes, 17.72 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 41, 49, 42, 51, 46, 44, 64, 59, 67, 65, 69, 60, 66]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.5842, Accuracy: 0.5000
+Epoch 4, Loss: 41.0266, Accuracy: 0.5000
+Epoch 6, Loss: 6.6313, Accuracy: 0.5000
+Epoch 8, Loss: 0.6479, Accuracy: 0.5852
+Epoch 10, Loss: 0.6089, Accuracy: 0.6167
+[[336, 264], [510, 90], [518, 82], [580, 20], [224, 376], [187, 413], [590, 10], [184, 416], [441, 159], [213, 387], [207, 393], [214, 386], [194, 406], [194, 406]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 545
+Patient 41 predicted PD  wavetrains 595
+Patient 49 predicted PD  wavetrains 395
+Patient 42 predicted PD  wavetrains 582
+Patient 51 predicted PD  wavetrains 558
+Patient 46 predicted PD  wavetrains 248
+Patient 44 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 209
+Patient 59 predicted PD  wavetrains 201
+Patient 67 predicted PD  wavetrains 196
+Patient 65 predicted PD  wavetrains 370
+Patient 69 predicted PD  wavetrains 207
+Patient 60 predicted PD  wavetrains 516
+Patient 66 predicted PD  wavetrains 198
+Final accuracy is 21 0.7857142857142857
+Random data selection interation time: 0 hours, 10 minutes, 8.42 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 46, 53, 52, 49, 43, 44, 63, 56, 67, 62, 58, 68, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.3263, Accuracy: 0.5000
+Epoch 4, Loss: 48.7577, Accuracy: 0.5000
+Epoch 6, Loss: 48.1289, Accuracy: 0.5000
+Epoch 8, Loss: 47.2027, Accuracy: 0.5000
+Epoch 10, Loss: 42.4386, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Final accuracy is 22 0.5
+Random data selection interation time: 0 hours, 10 minutes, 16.24 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 45, 50, 53, 46, 43, 47, 54, 63, 69, 59, 66, 62, 64, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9792, Accuracy: 0.5000
+Epoch 4, Loss: 49.8449, Accuracy: 0.5000
+Epoch 6, Loss: 49.8952, Accuracy: 0.5000
+Epoch 8, Loss: 50.1135, Accuracy: 0.5000
+Epoch 10, Loss: 50.0880, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 45 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Final accuracy is 23 0.5
+Random data selection interation time: 0 hours, 10 minutes, 26.32 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 41, 42, 51, 43, 46, 45, 68, 66, 67, 56, 59, 69, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.2370, Accuracy: 0.5000
+Epoch 4, Loss: 44.9846, Accuracy: 0.5000
+Epoch 6, Loss: 39.5387, Accuracy: 0.5000
+Epoch 8, Loss: 27.8065, Accuracy: 0.5000
+Epoch 10, Loss: 15.1945, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Final accuracy is 24 0.5
+Random data selection interation time: 0 hours, 10 minutes, 18.02 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 44, 48, 49, 47, 53, 42, 66, 63, 67, 68, 61, 62, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7306, Accuracy: 0.5000
+Epoch 4, Loss: 49.8336, Accuracy: 0.5000
+Epoch 6, Loss: 49.6098, Accuracy: 0.5000
+Epoch 8, Loss: 49.6283, Accuracy: 0.5000
+Epoch 10, Loss: 49.5772, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Final accuracy is 25 0.5
+Random data selection interation time: 0 hours, 10 minutes, 8.22 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 44, 47, 43, 48, 46, 53, 54, 57, 69, 61, 60, 56, 63, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8081, Accuracy: 0.5000
+Epoch 4, Loss: 49.8785, Accuracy: 0.5000
+Epoch 6, Loss: 49.7318, Accuracy: 0.5000
+Epoch 8, Loss: 49.8793, Accuracy: 0.5000
+Epoch 10, Loss: 49.7111, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 44 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Final accuracy is 26 0.5
+Random data selection interation time: 0 hours, 10 minutes, 9.71 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 54, 51, 48, 43, 42, 53, 68, 61, 56, 65, 63, 58, 57]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0672, Accuracy: 0.5000
+Epoch 4, Loss: 50.1343, Accuracy: 0.5000
+Epoch 6, Loss: 49.9328, Accuracy: 0.5000
+Epoch 8, Loss: 49.9496, Accuracy: 0.5000
+Epoch 10, Loss: 49.9328, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Final accuracy is 27 0.5
+Random data selection interation time: 0 hours, 10 minutes, 14.79 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 45, 44, 41, 50, 49, 53, 43, 60, 57, 62, 65, 58, 63, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9664, Accuracy: 0.5000
+Epoch 4, Loss: 49.9664, Accuracy: 0.5000
+Epoch 6, Loss: 49.9664, Accuracy: 0.5000
+Epoch 8, Loss: 49.9496, Accuracy: 0.5000
+Epoch 10, Loss: 49.8657, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 45 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Final accuracy is 28 0.5
+Random data selection interation time: 0 hours, 10 minutes, 23.03 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 48, 47, 49, 44, 53, 45, 46, 58, 57, 62, 68, 56, 67, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 44.4014, Accuracy: 0.5000
+Epoch 4, Loss: 19.6897, Accuracy: 0.5000
+Epoch 6, Loss: 0.7488, Accuracy: 0.5692
+Epoch 8, Loss: 0.5592, Accuracy: 0.6676
+Epoch 10, Loss: 0.5497, Accuracy: 0.6977
+[[591, 9], [491, 109], [251, 349], [193, 407], [472, 128], [497, 103], [547, 53], [160, 440], [167, 433], [185, 415], [173, 427], [228, 372], [176, 424], [182, 418]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 48 predicted PD  wavetrains 532
+Patient 47 predicted PD  wavetrains 464
+Patient 49 predicted PD  wavetrains 285
+Patient 44 predicted PD  wavetrains 597
+Patient 53 predicted PD  wavetrains 176
+Patient 45 predicted PD  wavetrains 446
+Patient 46 predicted PD  wavetrains 174
+Patient 58 predicted PD  wavetrains 166
+Patient 57 predicted PD  wavetrains 293
+Patient 62 predicted PD  wavetrains 199
+Patient 68 predicted PD  wavetrains 147
+Patient 56 predicted PD  wavetrains 169
+Patient 67 predicted PD  wavetrains 169
+Patient 60 predicted PD  wavetrains 404
+Final accuracy is 29 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 29.09 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 46, 54, 47, 49, 45, 41, 68, 67, 56, 63, 64, 58, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6462, Accuracy: 0.5000
+Epoch 4, Loss: 49.5712, Accuracy: 0.5000
+Epoch 6, Loss: 49.3496, Accuracy: 0.5000
+Epoch 8, Loss: 48.9082, Accuracy: 0.5000
+Epoch 10, Loss: 47.1960, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Final accuracy is 30 0.5
+Random data selection interation time: 0 hours, 10 minutes, 29.89 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 54, 45, 49, 53, 47, 50, 57, 68, 66, 62, 64, 61, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9150, Accuracy: 0.5000
+Epoch 4, Loss: 49.8704, Accuracy: 0.5000
+Epoch 6, Loss: 49.6715, Accuracy: 0.5000
+Epoch 8, Loss: 49.6282, Accuracy: 0.5000
+Epoch 10, Loss: 49.2097, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Final accuracy is 31 0.5
+Random data selection interation time: 0 hours, 10 minutes, 56.29 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 51, 42, 49, 43, 54, 48, 59, 64, 63, 65, 66, 60, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9734, Accuracy: 0.5000
+Epoch 4, Loss: 49.9539, Accuracy: 0.5000
+Epoch 6, Loss: 50.0442, Accuracy: 0.5000
+Epoch 8, Loss: 49.7140, Accuracy: 0.5000
+Epoch 10, Loss: 48.7865, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Final accuracy is 32 0.5
+Random data selection interation time: 0 hours, 10 minutes, 47.69 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 50, 48, 51, 49, 53, 41, 68, 63, 61, 60, 59, 62, 66]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8993, Accuracy: 0.5000
+Epoch 4, Loss: 49.8825, Accuracy: 0.5000
+Epoch 6, Loss: 49.9832, Accuracy: 0.5000
+Epoch 8, Loss: 50.1007, Accuracy: 0.5000
+Epoch 10, Loss: 50.2519, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Final accuracy is 33 0.5
+Random data selection interation time: 0 hours, 10 minutes, 23.17 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 49, 54, 42, 44, 51, 41, 67, 58, 69, 68, 61, 59, 62]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7093, Accuracy: 0.5000
+Epoch 4, Loss: 49.8302, Accuracy: 0.5000
+Epoch 6, Loss: 48.6956, Accuracy: 0.5000
+Epoch 8, Loss: 41.3186, Accuracy: 0.5000
+Epoch 10, Loss: 3.0450, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [599, 1], [600, 0], [600, 0], [598, 2], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 599
+Patient 58 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 598
+Patient 68 predicted PD  wavetrains 599
+Patient 61 predicted PD  wavetrains 599
+Patient 59 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Final accuracy is 34 0.7857142857142857
+Random data selection interation time: 0 hours, 11 minutes, 23.29 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 45, 54, 41, 51, 46, 50, 62, 61, 66, 56, 60, 59, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7834, Accuracy: 0.5000
+Epoch 4, Loss: 50.0413, Accuracy: 0.5000
+Epoch 6, Loss: 49.6920, Accuracy: 0.5000
+Epoch 8, Loss: 49.9187, Accuracy: 0.5000
+Epoch 10, Loss: 49.8133, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Final accuracy is 35 0.5
+Random data selection interation time: 0 hours, 11 minutes, 15.34 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 54, 50, 47, 51, 48, 52, 56, 65, 61, 58, 64, 59, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 2.0499, Accuracy: 0.5000
+Epoch 4, Loss: 0.7457, Accuracy: 0.4993
+Epoch 6, Loss: 0.6902, Accuracy: 0.5000
+Epoch 8, Loss: 0.6870, Accuracy: 0.5000
+Epoch 10, Loss: 0.6831, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Final accuracy is 36 0.5
+Random data selection interation time: 0 hours, 10 minutes, 7.40 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 53, 54, 46, 49, 51, 43, 65, 58, 61, 64, 68, 60, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 46.0450, Accuracy: 0.5000
+Epoch 4, Loss: 34.3196, Accuracy: 0.5000
+Epoch 6, Loss: 3.2286, Accuracy: 0.5000
+Epoch 8, Loss: 0.6458, Accuracy: 0.4858
+Epoch 10, Loss: 0.6034, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Final accuracy is 37 0.5
+Random data selection interation time: 0 hours, 10 minutes, 7.63 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 53, 47, 41, 54, 45, 42, 50, 57, 60, 67, 58, 65, 64, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0519, Accuracy: 0.5000
+Epoch 4, Loss: 50.1191, Accuracy: 0.5000
+Epoch 6, Loss: 49.8957, Accuracy: 0.5000
+Epoch 8, Loss: 49.9679, Accuracy: 0.5000
+Epoch 10, Loss: 49.9679, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 53 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Final accuracy is 38 0.5
+Random data selection interation time: 0 hours, 10 minutes, 5.24 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 45, 49, 50, 44, 43, 48, 41, 61, 66, 68, 57, 56, 60, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1007, Accuracy: 0.5000
+Epoch 4, Loss: 50.1175, Accuracy: 0.5000
+Epoch 6, Loss: 49.7985, Accuracy: 0.5000
+Epoch 8, Loss: 49.8153, Accuracy: 0.5000
+Epoch 10, Loss: 49.8489, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 45 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Final accuracy is 39 0.5
+Random data selection interation time: 0 hours, 10 minutes, 18.39 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 47, 49, 54, 45, 50, 53, 57, 63, 67, 56, 68, 58, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1007, Accuracy: 0.5000
+Epoch 4, Loss: 49.8993, Accuracy: 0.5000
+Epoch 6, Loss: 49.9160, Accuracy: 0.5000
+Epoch 8, Loss: 49.7313, Accuracy: 0.5000
+Epoch 10, Loss: 50.1007, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Final accuracy is 40 0.5
+Random data selection interation time: 0 hours, 10 minutes, 17.07 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 44, 45, 41, 48, 46, 54, 65, 59, 58, 56, 64, 61, 57]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 20.9601, Accuracy: 0.5000
+Epoch 4, Loss: 11.7461, Accuracy: 0.5000
+Epoch 6, Loss: 1.7753, Accuracy: 0.4555
+Epoch 8, Loss: 0.7608, Accuracy: 0.4923
+Epoch 10, Loss: 0.7344, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Final accuracy is 41 0.5
+Random data selection interation time: 0 hours, 10 minutes, 30.08 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 44, 54, 48, 43, 52, 47, 69, 61, 58, 65, 64, 67, 66]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9160, Accuracy: 0.5000
+Epoch 4, Loss: 49.9328, Accuracy: 0.5000
+Epoch 6, Loss: 49.9496, Accuracy: 0.5000
+Epoch 8, Loss: 50.1511, Accuracy: 0.5000
+Epoch 10, Loss: 50.0336, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Final accuracy is 42 0.5
+Random data selection interation time: 0 hours, 10 minutes, 19.02 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 49, 44, 45, 41, 46, 51, 60, 63, 56, 57, 68, 67, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.9816, Accuracy: 0.5000
+Epoch 4, Loss: 47.4951, Accuracy: 0.5000
+Epoch 6, Loss: 36.0261, Accuracy: 0.5000
+Epoch 8, Loss: 2.8724, Accuracy: 0.5000
+Epoch 10, Loss: 0.6427, Accuracy: 0.5468
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 599
+Patient 56 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Final accuracy is 43 0.5
+Random data selection interation time: 0 hours, 10 minutes, 27.62 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 42, 49, 43, 53, 50, 52, 56, 65, 60, 69, 68, 66, 64]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0336, Accuracy: 0.5000
+Epoch 4, Loss: 50.0000, Accuracy: 0.5000
+Epoch 6, Loss: 49.8153, Accuracy: 0.5000
+Epoch 8, Loss: 50.0336, Accuracy: 0.5000
+Epoch 10, Loss: 49.9160, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Final accuracy is 44 0.5
+Random data selection interation time: 0 hours, 10 minutes, 21.62 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 45, 42, 44, 49, 47, 53, 68, 63, 67, 58, 60, 61, 62]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7985, Accuracy: 0.5000
+Epoch 4, Loss: 50.0672, Accuracy: 0.5000
+Epoch 6, Loss: 50.1343, Accuracy: 0.5000
+Epoch 8, Loss: 49.9160, Accuracy: 0.5000
+Epoch 10, Loss: 49.7313, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Final accuracy is 45 0.5
+Random data selection interation time: 0 hours, 10 minutes, 11.21 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 44, 51, 48, 52, 41, 53, 46, 63, 64, 56, 60, 68, 57, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1511, Accuracy: 0.5000
+Epoch 4, Loss: 49.9832, Accuracy: 0.5000
+Epoch 6, Loss: 49.9160, Accuracy: 0.5000
+Epoch 8, Loss: 49.9832, Accuracy: 0.5000
+Epoch 10, Loss: 49.9664, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 44 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Final accuracy is 46 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.06 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 44, 45, 41, 47, 53, 42, 48, 60, 58, 68, 63, 62, 61, 56]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8977, Accuracy: 0.5000
+Epoch 4, Loss: 50.0101, Accuracy: 0.5000
+Epoch 6, Loss: 49.7131, Accuracy: 0.5000
+Epoch 8, Loss: 49.8137, Accuracy: 0.5000
+Epoch 10, Loss: 49.6960, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 44 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Final accuracy is 47 0.5
+Random data selection interation time: 0 hours, 10 minutes, 19.58 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 46, 51, 48, 42, 54, 49, 59, 60, 62, 58, 63, 65, 68]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.3393, Accuracy: 0.5000
+Epoch 4, Loss: 45.2870, Accuracy: 0.5000
+Epoch 6, Loss: 39.0894, Accuracy: 0.5000
+Epoch 8, Loss: 30.0737, Accuracy: 0.5000
+Epoch 10, Loss: 20.9196, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Final accuracy is 48 0.5
+Random data selection interation time: 0 hours, 10 minutes, 14.41 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 46, 45, 41, 42, 50, 53, 67, 68, 56, 60, 66, 59, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 34.7946, Accuracy: 0.5000
+Epoch 4, Loss: 23.0382, Accuracy: 0.5000
+Epoch 6, Loss: 4.3250, Accuracy: 0.4850
+Epoch 8, Loss: 0.7556, Accuracy: 0.5000
+Epoch 10, Loss: 0.6364, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Final accuracy is 49 0.5
+Random data selection interation time: 0 hours, 10 minutes, 8.39 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 49, 52, 54, 41, 45, 42, 65, 68, 58, 57, 69, 56, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.9159, Accuracy: 0.5000
+Epoch 4, Loss: 46.3793, Accuracy: 0.5000
+Epoch 6, Loss: 42.0436, Accuracy: 0.5000
+Epoch 8, Loss: 31.5611, Accuracy: 0.5000
+Epoch 10, Loss: 18.1485, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Final accuracy is 50 0.5
+Random data selection interation time: 0 hours, 10 minutes, 9.20 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 41, 48, 52, 49, 42, 54, 68, 56, 62, 67, 61, 60, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8908, Accuracy: 0.5000
+Epoch 4, Loss: 49.3581, Accuracy: 0.5000
+Epoch 6, Loss: 48.6036, Accuracy: 0.5000
+Epoch 8, Loss: 40.5775, Accuracy: 0.5000
+Epoch 10, Loss: 3.8583, Accuracy: 0.5005
+[[599, 1], [600, 0], [600, 0], [597, 3], [592, 8], [600, 0], [592, 8], [600, 0], [588, 12], [587, 13], [595, 5], [599, 1], [591, 9], [592, 8]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 593
+Patient 56 predicted PD  wavetrains 587
+Patient 62 predicted PD  wavetrains 592
+Patient 67 predicted PD  wavetrains 591
+Patient 61 predicted PD  wavetrains 584
+Patient 60 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 594
+Final accuracy is 51 0.9285714285714286
+Random data selection interation time: 0 hours, 10 minutes, 8.02 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 50, 46, 47, 41, 42, 49, 62, 59, 68, 58, 56, 57, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9754, Accuracy: 0.5000
+Epoch 4, Loss: 49.6430, Accuracy: 0.5000
+Epoch 6, Loss: 49.5978, Accuracy: 0.5000
+Epoch 8, Loss: 49.4543, Accuracy: 0.5000
+Epoch 10, Loss: 49.0437, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Final accuracy is 52 0.5
+Random data selection interation time: 0 hours, 10 minutes, 16.85 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 44, 54, 43, 46, 53, 48, 66, 58, 67, 60, 68, 64, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 11.3503, Accuracy: 0.5000
+Epoch 4, Loss: 0.9317, Accuracy: 0.5012
+Epoch 6, Loss: 0.6392, Accuracy: 0.6449
+Epoch 8, Loss: 0.6209, Accuracy: 0.5394
+Epoch 10, Loss: 0.6195, Accuracy: 0.5382
+[[600, 0], [599, 1], [593, 7], [587, 13], [586, 14], [593, 7], [597, 3], [529, 71], [585, 15], [526, 74], [526, 74], [530, 70], [582, 18], [534, 66]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 534
+Patient 44 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 599
+Patient 43 predicted PD  wavetrains 570
+Patient 46 predicted PD  wavetrains 543
+Patient 53 predicted PD  wavetrains 537
+Patient 48 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 535
+Patient 58 predicted PD  wavetrains 525
+Patient 67 predicted PD  wavetrains 531
+Patient 60 predicted PD  wavetrains 593
+Patient 68 predicted PD  wavetrains 549
+Patient 64 predicted PD  wavetrains 542
+Patient 63 predicted PD  wavetrains 531
+Final accuracy is 53 0.6428571428571429
+Random data selection interation time: 0 hours, 10 minutes, 10.04 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 44, 49, 45, 52, 50, 43, 54, 69, 59, 64, 58, 66, 62, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 6.8972, Accuracy: 0.5000
+Epoch 4, Loss: 0.6764, Accuracy: 0.5760
+Epoch 6, Loss: 0.6040, Accuracy: 0.6556
+Epoch 8, Loss: 0.5995, Accuracy: 0.6300
+Epoch 10, Loss: 0.5982, Accuracy: 0.6210
+[[599, 1], [593, 7], [340, 260], [544, 56], [590, 10], [572, 28], [278, 322], [234, 366], [501, 99], [543, 57], [244, 356], [460, 140], [238, 362], [274, 326]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 44 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 477
+Patient 45 predicted PD  wavetrains 549
+Patient 52 predicted PD  wavetrains 571
+Patient 50 predicted PD  wavetrains 277
+Patient 43 predicted PD  wavetrains 419
+Patient 54 predicted PD  wavetrains 594
+Patient 69 predicted PD  wavetrains 248
+Patient 59 predicted PD  wavetrains 234
+Patient 64 predicted PD  wavetrains 303
+Patient 58 predicted PD  wavetrains 257
+Patient 66 predicted PD  wavetrains 278
+Patient 62 predicted PD  wavetrains 265
+Patient 63 predicted PD  wavetrains 238
+Final accuracy is 54 0.8571428571428571
+Random data selection interation time: 0 hours, 10 minutes, 24.45 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 53, 45, 46, 50, 42, 43, 41, 66, 65, 59, 67, 60, 64, 56]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.6027, Accuracy: 0.5000
+Epoch 4, Loss: 46.2910, Accuracy: 0.5000
+Epoch 6, Loss: 28.0115, Accuracy: 0.5000
+Epoch 8, Loss: 2.0990, Accuracy: 0.5000
+Epoch 10, Loss: 0.6517, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 53 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Final accuracy is 55 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.68 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 51, 44, 49, 53, 52, 42, 48, 67, 56, 65, 60, 66, 61, 68]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.9628, Accuracy: 0.5000
+Epoch 4, Loss: 48.3915, Accuracy: 0.5000
+Epoch 6, Loss: 47.1056, Accuracy: 0.5000
+Epoch 8, Loss: 42.8020, Accuracy: 0.5000
+Epoch 10, Loss: 30.4017, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 51 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Final accuracy is 56 0.5
+Random data selection interation time: 0 hours, 10 minutes, 23.56 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 49, 53, 48, 44, 54, 42, 41, 57, 59, 62, 61, 58, 60, 68]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8825, Accuracy: 0.5000
+Epoch 4, Loss: 50.2687, Accuracy: 0.5000
+Epoch 6, Loss: 49.9664, Accuracy: 0.5000
+Epoch 8, Loss: 49.9328, Accuracy: 0.5000
+Epoch 10, Loss: 49.9832, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 49 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Final accuracy is 57 0.5
+Random data selection interation time: 0 hours, 10 minutes, 7.92 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 50, 46, 53, 44, 51, 41, 59, 63, 66, 67, 68, 60, 57]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.3429, Accuracy: 0.5000
+Epoch 4, Loss: 49.1607, Accuracy: 0.5000
+Epoch 6, Loss: 48.6893, Accuracy: 0.5000
+Epoch 8, Loss: 48.3480, Accuracy: 0.5000
+Epoch 10, Loss: 47.2062, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Final accuracy is 58 0.5
+Random data selection interation time: 0 hours, 10 minutes, 7.39 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 43, 53, 49, 45, 46, 41, 59, 57, 62, 66, 56, 67, 61]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0336, Accuracy: 0.5000
+Epoch 4, Loss: 50.0336, Accuracy: 0.5000
+Epoch 6, Loss: 49.9832, Accuracy: 0.5000
+Epoch 8, Loss: 50.0168, Accuracy: 0.5000
+Epoch 10, Loss: 50.0000, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Final accuracy is 59 0.5
+Random data selection interation time: 0 hours, 10 minutes, 15.56 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 46, 50, 43, 49, 52, 45, 56, 61, 66, 62, 59, 69, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8982, Accuracy: 0.5000
+Epoch 4, Loss: 49.5045, Accuracy: 0.5000
+Epoch 6, Loss: 47.8319, Accuracy: 0.5000
+Epoch 8, Loss: 18.3713, Accuracy: 0.5000
+Epoch 10, Loss: 0.8198, Accuracy: 0.4815
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Final accuracy is 60 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.97 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 46, 44, 54, 52, 50, 51, 63, 60, 65, 67, 58, 66, 62]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 39.4845, Accuracy: 0.5000
+Epoch 4, Loss: 8.6742, Accuracy: 0.5000
+Epoch 6, Loss: 0.7176, Accuracy: 0.5743
+Epoch 8, Loss: 0.5693, Accuracy: 0.6735
+Epoch 10, Loss: 0.5634, Accuracy: 0.7079
+[[600, 0], [597, 3], [554, 46], [546, 54], [593, 7], [518, 82], [289, 311], [220, 380], [546, 54], [217, 383], [226, 374], [299, 301], [292, 308], [234, 366]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 447
+Patient 46 predicted PD  wavetrains 370
+Patient 44 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 594
+Patient 52 predicted PD  wavetrains 576
+Patient 50 predicted PD  wavetrains 266
+Patient 51 predicted PD  wavetrains 584
+Patient 63 predicted PD  wavetrains 217
+Patient 60 predicted PD  wavetrains 569
+Patient 65 predicted PD  wavetrains 517
+Patient 67 predicted PD  wavetrains 216
+Patient 58 predicted PD  wavetrains 241
+Patient 66 predicted PD  wavetrains 281
+Patient 62 predicted PD  wavetrains 251
+Final accuracy is 61 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 8.38 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 43, 44, 53, 54, 41, 45, 67, 60, 59, 61, 58, 64, 57]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6843, Accuracy: 0.5000
+Epoch 4, Loss: 49.3283, Accuracy: 0.5000
+Epoch 6, Loss: 49.3338, Accuracy: 0.5000
+Epoch 8, Loss: 49.2240, Accuracy: 0.5000
+Epoch 10, Loss: 48.7134, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Final accuracy is 62 0.5
+Random data selection interation time: 0 hours, 10 minutes, 18.42 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 49, 41, 50, 51, 53, 42, 64, 59, 58, 66, 63, 57, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8442, Accuracy: 0.5000
+Epoch 4, Loss: 49.8924, Accuracy: 0.5000
+Epoch 6, Loss: 49.6838, Accuracy: 0.5000
+Epoch 8, Loss: 49.9152, Accuracy: 0.5000
+Epoch 10, Loss: 49.8663, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Final accuracy is 63 0.5
+Random data selection interation time: 0 hours, 10 minutes, 16.82 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 45, 44, 47, 54, 52, 41, 42, 69, 66, 67, 59, 65, 63, 61]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1175, Accuracy: 0.5000
+Epoch 4, Loss: 49.7145, Accuracy: 0.5000
+Epoch 6, Loss: 49.8825, Accuracy: 0.5000
+Epoch 8, Loss: 50.1007, Accuracy: 0.5000
+Epoch 10, Loss: 49.9664, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 45 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Final accuracy is 64 0.5
+Random data selection interation time: 0 hours, 10 minutes, 42.08 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 49, 54, 41, 51, 53, 43, 62, 68, 69, 64, 63, 65, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1007, Accuracy: 0.5000
+Epoch 4, Loss: 49.8321, Accuracy: 0.5000
+Epoch 6, Loss: 50.1679, Accuracy: 0.5000
+Epoch 8, Loss: 50.0168, Accuracy: 0.5000
+Epoch 10, Loss: 50.1343, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Final accuracy is 65 0.5
+Random data selection interation time: 0 hours, 10 minutes, 20.47 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 43, 49, 47, 52, 45, 46, 61, 63, 62, 67, 64, 58, 66]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9390, Accuracy: 0.5000
+Epoch 4, Loss: 49.6310, Accuracy: 0.5000
+Epoch 6, Loss: 49.6750, Accuracy: 0.5000
+Epoch 8, Loss: 49.7375, Accuracy: 0.5000
+Epoch 10, Loss: 49.5421, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Final accuracy is 66 0.5
+Random data selection interation time: 0 hours, 10 minutes, 21.77 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 47, 42, 44, 51, 54, 45, 67, 63, 56, 59, 60, 69, 61]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9160, Accuracy: 0.5000
+Epoch 4, Loss: 49.8321, Accuracy: 0.5000
+Epoch 6, Loss: 50.0000, Accuracy: 0.5000
+Epoch 8, Loss: 49.9832, Accuracy: 0.5000
+Epoch 10, Loss: 50.1175, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Final accuracy is 67 0.5
+Random data selection interation time: 0 hours, 10 minutes, 13.37 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 49, 54, 43, 42, 52, 45, 46, 62, 63, 66, 56, 57, 64, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0168, Accuracy: 0.5000
+Epoch 4, Loss: 49.9832, Accuracy: 0.5000
+Epoch 6, Loss: 50.0168, Accuracy: 0.5000
+Epoch 8, Loss: 49.9664, Accuracy: 0.5000
+Epoch 10, Loss: 49.9832, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 49 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Final accuracy is 68 0.5
+Random data selection interation time: 0 hours, 10 minutes, 18.55 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 51, 53, 50, 47, 41, 52, 48, 68, 66, 56, 59, 58, 65, 62]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0180, Accuracy: 0.5000
+Epoch 4, Loss: 50.1215, Accuracy: 0.5000
+Epoch 6, Loss: 49.9872, Accuracy: 0.5000
+Epoch 8, Loss: 50.0208, Accuracy: 0.5000
+Epoch 10, Loss: 49.8193, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 51 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Final accuracy is 69 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.69 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 50, 49, 42, 41, 54, 46, 59, 63, 61, 64, 60, 68, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7782, Accuracy: 0.5000
+Epoch 4, Loss: 49.7880, Accuracy: 0.5000
+Epoch 6, Loss: 49.6356, Accuracy: 0.5000
+Epoch 8, Loss: 49.5162, Accuracy: 0.5000
+Epoch 10, Loss: 49.2561, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Final accuracy is 70 0.5
+Random data selection interation time: 0 hours, 10 minutes, 24.28 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 43, 47, 54, 44, 42, 45, 68, 58, 66, 69, 67, 60, 64]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9538, Accuracy: 0.5000
+Epoch 4, Loss: 50.0071, Accuracy: 0.5000
+Epoch 6, Loss: 49.6188, Accuracy: 0.5000
+Epoch 8, Loss: 49.8742, Accuracy: 0.5000
+Epoch 10, Loss: 49.6658, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Final accuracy is 71 0.5
+Random data selection interation time: 0 hours, 10 minutes, 43.85 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 51, 41, 47, 45, 48, 50, 61, 66, 64, 56, 60, 57, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.0007, Accuracy: 0.5000
+Epoch 4, Loss: 47.6488, Accuracy: 0.5000
+Epoch 6, Loss: 38.0439, Accuracy: 0.5000
+Epoch 8, Loss: 3.5925, Accuracy: 0.5000
+Epoch 10, Loss: 0.7070, Accuracy: 0.4927
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Final accuracy is 72 0.5
+Random data selection interation time: 0 hours, 10 minutes, 28.33 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 45, 50, 51, 49, 43, 52, 46, 67, 60, 69, 65, 68, 61, 64]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0000, Accuracy: 0.5000
+Epoch 4, Loss: 50.1007, Accuracy: 0.5000
+Epoch 6, Loss: 50.0672, Accuracy: 0.5000
+Epoch 8, Loss: 49.9328, Accuracy: 0.5000
+Epoch 10, Loss: 50.0840, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 45 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Final accuracy is 73 0.5
+Random data selection interation time: 0 hours, 10 minutes, 21.65 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 51, 44, 45, 42, 46, 50, 54, 62, 69, 56, 60, 66, 61, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.6893, Accuracy: 0.5000
+Epoch 4, Loss: 46.6636, Accuracy: 0.5000
+Epoch 6, Loss: 20.8409, Accuracy: 0.5000
+Epoch 8, Loss: 0.9601, Accuracy: 0.5471
+Epoch 10, Loss: 0.5762, Accuracy: 0.6408
+[[600, 0], [319, 281], [498, 102], [566, 34], [371, 229], [519, 81], [194, 406], [418, 182], [144, 456], [147, 453], [177, 423], [195, 405], [377, 223], [155, 445]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 51 predicted PD  wavetrains 533
+Patient 44 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 492
+Patient 42 predicted PD  wavetrains 534
+Patient 46 predicted PD  wavetrains 226
+Patient 50 predicted PD  wavetrains 189
+Patient 54 predicted PD  wavetrains 569
+Patient 62 predicted PD  wavetrains 192
+Patient 69 predicted PD  wavetrains 174
+Patient 56 predicted PD  wavetrains 159
+Patient 60 predicted PD  wavetrains 527
+Patient 66 predicted PD  wavetrains 203
+Patient 61 predicted PD  wavetrains 152
+Patient 67 predicted PD  wavetrains 150
+Final accuracy is 74 0.7857142857142857
+Random data selection interation time: 0 hours, 10 minutes, 12.78 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 45, 46, 52, 41, 48, 43, 54, 61, 66, 65, 57, 69, 56, 64]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 0.6191, Accuracy: 0.6237
+Epoch 4, Loss: 0.5826, Accuracy: 0.6815
+Epoch 6, Loss: 0.5803, Accuracy: 0.6799
+Epoch 8, Loss: 0.5778, Accuracy: 0.6837
+Epoch 10, Loss: 0.5768, Accuracy: 0.6810
+[[535, 65], [600, 0], [490, 110], [319, 281], [143, 457], [519, 81], [150, 450], [131, 469], [115, 485], [464, 136], [150, 450], [128, 472], [110, 490], [138, 462]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 45 predicted PD  wavetrains 461
+Patient 46 predicted PD  wavetrains 186
+Patient 52 predicted PD  wavetrains 505
+Patient 41 predicted PD  wavetrains 591
+Patient 48 predicted PD  wavetrains 560
+Patient 43 predicted PD  wavetrains 273
+Patient 54 predicted PD  wavetrains 567
+Patient 61 predicted PD  wavetrains 125
+Patient 66 predicted PD  wavetrains 161
+Patient 65 predicted PD  wavetrains 287
+Patient 57 predicted PD  wavetrains 364
+Patient 69 predicted PD  wavetrains 130
+Patient 56 predicted PD  wavetrains 115
+Patient 64 predicted PD  wavetrains 162
+Final accuracy is 75 0.7857142857142857
+Random data selection interation time: 0 hours, 10 minutes, 12.24 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 48, 47, 50, 49, 46, 45, 68, 64, 63, 62, 67, 65, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6665, Accuracy: 0.5000
+Epoch 4, Loss: 48.9756, Accuracy: 0.5000
+Epoch 6, Loss: 45.8320, Accuracy: 0.5000
+Epoch 8, Loss: 16.8383, Accuracy: 0.5000
+Epoch 10, Loss: 0.8108, Accuracy: 0.4848
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Final accuracy is 76 0.5
+Random data selection interation time: 0 hours, 10 minutes, 13.87 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 53, 46, 54, 52, 45, 47, 65, 66, 58, 69, 62, 67, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9496, Accuracy: 0.5000
+Epoch 4, Loss: 49.9254, Accuracy: 0.5000
+Epoch 6, Loss: 49.8514, Accuracy: 0.5000
+Epoch 8, Loss: 49.8980, Accuracy: 0.5000
+Epoch 10, Loss: 49.7783, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Final accuracy is 77 0.5
+Random data selection interation time: 0 hours, 10 minutes, 9.16 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 49, 48, 42, 53, 54, 50, 41, 65, 56, 64, 66, 59, 69, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.2417, Accuracy: 0.5000
+Epoch 4, Loss: 47.5893, Accuracy: 0.5000
+Epoch 6, Loss: 46.4207, Accuracy: 0.5000
+Epoch 8, Loss: 42.6468, Accuracy: 0.5000
+Epoch 10, Loss: 30.8880, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 49 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Final accuracy is 78 0.5
+Random data selection interation time: 0 hours, 10 minutes, 16.52 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 49, 51, 53, 41, 46, 45, 56, 64, 59, 57, 67, 60, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 41.8700, Accuracy: 0.5000
+Epoch 4, Loss: 11.4539, Accuracy: 0.5000
+Epoch 6, Loss: 0.6488, Accuracy: 0.6049
+Epoch 8, Loss: 0.5647, Accuracy: 0.6837
+Epoch 10, Loss: 0.5592, Accuracy: 0.6874
+[[567, 33], [357, 243], [600, 0], [514, 86], [580, 20], [255, 345], [546, 54], [224, 376], [245, 355], [213, 387], [393, 207], [246, 354], [239, 361], [226, 374]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 584
+Patient 49 predicted PD  wavetrains 418
+Patient 51 predicted PD  wavetrains 544
+Patient 53 predicted PD  wavetrains 245
+Patient 41 predicted PD  wavetrains 594
+Patient 46 predicted PD  wavetrains 298
+Patient 45 predicted PD  wavetrains 511
+Patient 56 predicted PD  wavetrains 214
+Patient 64 predicted PD  wavetrains 265
+Patient 59 predicted PD  wavetrains 213
+Patient 57 predicted PD  wavetrains 427
+Patient 67 predicted PD  wavetrains 216
+Patient 60 predicted PD  wavetrains 506
+Patient 58 predicted PD  wavetrains 226
+Final accuracy is 79 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 8.88 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 48, 52, 46, 54, 47, 45, 53, 57, 61, 69, 65, 58, 64, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 34.1227, Accuracy: 0.5000
+Epoch 4, Loss: 22.7456, Accuracy: 0.5000
+Epoch 6, Loss: 2.3490, Accuracy: 0.4868
+Epoch 8, Loss: 0.6773, Accuracy: 0.4973
+Epoch 10, Loss: 0.6527, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 48 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Final accuracy is 80 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.35 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 53, 43, 51, 54, 44, 46, 41, 61, 63, 68, 66, 65, 56, 67]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 45.7245, Accuracy: 0.5000
+Epoch 4, Loss: 40.3871, Accuracy: 0.5000
+Epoch 6, Loss: 29.2445, Accuracy: 0.5000
+Epoch 8, Loss: 14.9215, Accuracy: 0.5000
+Epoch 10, Loss: 3.8624, Accuracy: 0.4896
+[[0, 600], [12, 588], [23, 577], [0, 600], [31, 569], [128, 472], [3, 597], [28, 572], [142, 458], [138, 462], [23, 577], [137, 463], [128, 472], [138, 462]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 53 predicted PD  wavetrains 138
+Patient 43 predicted PD  wavetrains 64
+Patient 51 predicted PD  wavetrains 5
+Patient 54 predicted PD  wavetrains 1
+Patient 44 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 108
+Patient 41 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 149
+Patient 63 predicted PD  wavetrains 137
+Patient 68 predicted PD  wavetrains 119
+Patient 66 predicted PD  wavetrains 133
+Patient 65 predicted PD  wavetrains 46
+Patient 56 predicted PD  wavetrains 142
+Patient 67 predicted PD  wavetrains 136
+Final accuracy is 81 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 13.97 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 44, 42, 43, 53, 48, 52, 51, 60, 67, 61, 68, 69, 65, 62]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8826, Accuracy: 0.5000
+Epoch 4, Loss: 49.8461, Accuracy: 0.5000
+Epoch 6, Loss: 49.9225, Accuracy: 0.5000
+Epoch 8, Loss: 49.8452, Accuracy: 0.5000
+Epoch 10, Loss: 49.9668, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 44 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 62 predicted PD  wavetrains 0
+Final accuracy is 82 0.5
+Random data selection interation time: 0 hours, 10 minutes, 10.28 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 47, 46, 44, 45, 49, 50, 67, 60, 64, 66, 61, 57, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.1007, Accuracy: 0.5000
+Epoch 4, Loss: 49.9664, Accuracy: 0.5000
+Epoch 6, Loss: 50.0504, Accuracy: 0.5000
+Epoch 8, Loss: 50.2183, Accuracy: 0.5000
+Epoch 10, Loss: 50.0672, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Final accuracy is 83 0.5
+Random data selection interation time: 0 hours, 10 minutes, 16.54 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 47, 54, 45, 44, 50, 49, 53, 68, 65, 66, 59, 69, 61, 56]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.2141, Accuracy: 0.5000
+Epoch 4, Loss: 44.3636, Accuracy: 0.5000
+Epoch 6, Loss: 21.3625, Accuracy: 0.5000
+Epoch 8, Loss: 4.2542, Accuracy: 0.5000
+Epoch 10, Loss: 0.6271, Accuracy: 0.6098
+[[600, 0], [600, 0], [598, 2], [589, 11], [600, 0], [600, 0], [600, 0], [600, 0], [522, 78], [600, 0], [526, 74], [526, 74], [577, 23], [527, 73]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 47 predicted PD  wavetrains 596
+Patient 54 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 542
+Patient 49 predicted PD  wavetrains 599
+Patient 53 predicted PD  wavetrains 574
+Patient 68 predicted PD  wavetrains 569
+Patient 65 predicted PD  wavetrains 596
+Patient 66 predicted PD  wavetrains 558
+Patient 59 predicted PD  wavetrains 519
+Patient 69 predicted PD  wavetrains 536
+Patient 61 predicted PD  wavetrains 515
+Patient 56 predicted PD  wavetrains 520
+Final accuracy is 84 0.7857142857142857
+Random data selection interation time: 0 hours, 10 minutes, 42.24 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 41, 45, 50, 44, 49, 47, 56, 63, 58, 69, 60, 64, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.4167, Accuracy: 0.5000
+Epoch 4, Loss: 41.1864, Accuracy: 0.5000
+Epoch 6, Loss: 7.9630, Accuracy: 0.5000
+Epoch 8, Loss: 0.7494, Accuracy: 0.5988
+Epoch 10, Loss: 0.5850, Accuracy: 0.6873
+[[568, 32], [354, 246], [252, 348], [577, 23], [562, 38], [188, 412], [579, 21], [482, 118], [134, 466], [148, 452], [179, 421], [202, 398], [135, 465], [178, 422]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 540
+Patient 41 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 515
+Patient 50 predicted PD  wavetrains 180
+Patient 44 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 425
+Patient 47 predicted PD  wavetrains 517
+Patient 56 predicted PD  wavetrains 141
+Patient 63 predicted PD  wavetrains 160
+Patient 58 predicted PD  wavetrains 154
+Patient 69 predicted PD  wavetrains 164
+Patient 60 predicted PD  wavetrains 548
+Patient 64 predicted PD  wavetrains 205
+Patient 65 predicted PD  wavetrains 439
+Final accuracy is 85 0.7857142857142857
+Random data selection interation time: 0 hours, 10 minutes, 47.65 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 50, 42, 44, 47, 46, 48, 45, 63, 69, 67, 56, 64, 62, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9945, Accuracy: 0.5000
+Epoch 4, Loss: 49.9983, Accuracy: 0.5000
+Epoch 6, Loss: 49.8445, Accuracy: 0.5000
+Epoch 8, Loss: 49.8414, Accuracy: 0.5000
+Epoch 10, Loss: 48.8479, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 50 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Final accuracy is 86 0.5
+Random data selection interation time: 0 hours, 10 minutes, 46.66 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 41, 54, 43, 45, 49, 47, 64, 56, 68, 59, 61, 58, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.0325, Accuracy: 0.5000
+Epoch 4, Loss: 50.1159, Accuracy: 0.5000
+Epoch 6, Loss: 49.7732, Accuracy: 0.5000
+Epoch 8, Loss: 49.8446, Accuracy: 0.5000
+Epoch 10, Loss: 49.0955, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Final accuracy is 87 0.5
+Random data selection interation time: 0 hours, 10 minutes, 52.97 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 53, 42, 41, 52, 54, 51, 58, 62, 59, 66, 65, 68, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 50.2015, Accuracy: 0.5000
+Epoch 4, Loss: 49.8153, Accuracy: 0.5000
+Epoch 6, Loss: 49.9664, Accuracy: 0.5000
+Epoch 8, Loss: 49.9832, Accuracy: 0.5000
+Epoch 10, Loss: 50.0000, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 52 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 51 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 66 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Final accuracy is 88 0.5
+Random data selection interation time: 0 hours, 10 minutes, 46.20 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 48, 42, 47, 45, 51, 43, 61, 58, 68, 60, 57, 56, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.7941, Accuracy: 0.5000
+Epoch 4, Loss: 46.7161, Accuracy: 0.5000
+Epoch 6, Loss: 42.3822, Accuracy: 0.5000
+Epoch 8, Loss: 31.5801, Accuracy: 0.5000
+Epoch 10, Loss: 20.7990, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Final accuracy is 89 0.5
+Random data selection interation time: 0 hours, 10 minutes, 51.51 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 52, 51, 44, 49, 45, 46, 42, 61, 68, 65, 57, 67, 59, 69]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 48.0830, Accuracy: 0.5000
+Epoch 4, Loss: 46.6986, Accuracy: 0.5000
+Epoch 6, Loss: 42.2709, Accuracy: 0.5000
+Epoch 8, Loss: 31.5397, Accuracy: 0.5000
+Epoch 10, Loss: 18.2098, Accuracy: 0.4999
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [1, 599], [0, 600], [0, 600], [0, 600], [1, 599], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 52 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 49 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 1
+Patient 68 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Final accuracy is 90 0.5714285714285714
+Random data selection interation time: 0 hours, 10 minutes, 40.72 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 53, 43, 51, 45, 41, 48, 54, 58, 60, 59, 64, 67, 57, 68]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.7486, Accuracy: 0.5000
+Epoch 4, Loss: 49.4728, Accuracy: 0.5000
+Epoch 6, Loss: 49.0721, Accuracy: 0.5000
+Epoch 8, Loss: 48.7636, Accuracy: 0.5000
+Epoch 10, Loss: 47.3247, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 53 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 45 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 54 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Patient 68 predicted PD  wavetrains 0
+Final accuracy is 91 0.5
+Random data selection interation time: 0 hours, 10 minutes, 47.79 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 42, 50, 43, 47, 41, 51, 52, 60, 65, 66, 64, 67, 61, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9241, Accuracy: 0.5000
+Epoch 4, Loss: 49.5871, Accuracy: 0.5000
+Epoch 6, Loss: 49.8374, Accuracy: 0.5000
+Epoch 8, Loss: 49.6798, Accuracy: 0.5000
+Epoch 10, Loss: 49.2053, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 42 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 0
+Patient 43 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Final accuracy is 92 0.5
+Random data selection interation time: 0 hours, 10 minutes, 52.92 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 43, 49, 47, 42, 50, 52, 66, 67, 57, 64, 63, 60, 65]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 45.5983, Accuracy: 0.5000
+Epoch 4, Loss: 41.3645, Accuracy: 0.5000
+Epoch 6, Loss: 32.8258, Accuracy: 0.5000
+Epoch 8, Loss: 20.2294, Accuracy: 0.4992
+Epoch 10, Loss: 6.9020, Accuracy: 0.4704
+[[0, 600], [0, 600], [25, 575], [109, 491], [1, 599], [23, 577], [117, 483], [128, 472], [123, 477], [117, 483], [123, 477], [118, 482], [106, 494], [111, 489]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 6
+Patient 43 predicted PD  wavetrains 86
+Patient 49 predicted PD  wavetrains 53
+Patient 47 predicted PD  wavetrains 32
+Patient 42 predicted PD  wavetrains 5
+Patient 50 predicted PD  wavetrains 106
+Patient 52 predicted PD  wavetrains 11
+Patient 66 predicted PD  wavetrains 107
+Patient 67 predicted PD  wavetrains 120
+Patient 57 predicted PD  wavetrains 45
+Patient 64 predicted PD  wavetrains 107
+Patient 63 predicted PD  wavetrains 116
+Patient 60 predicted PD  wavetrains 24
+Patient 65 predicted PD  wavetrains 43
+Final accuracy is 93 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 54.69 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 43, 52, 47, 48, 44, 51, 42, 58, 65, 64, 56, 69, 67, 57]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.6345, Accuracy: 0.5000
+Epoch 4, Loss: 49.6156, Accuracy: 0.5000
+Epoch 6, Loss: 49.5147, Accuracy: 0.5000
+Epoch 8, Loss: 48.9811, Accuracy: 0.5000
+Epoch 10, Loss: 48.8770, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 43 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 42 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 0
+Patient 65 predicted PD  wavetrains 0
+Patient 64 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 69 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 57 predicted PD  wavetrains 0
+Final accuracy is 94 0.5
+Random data selection interation time: 0 hours, 11 minutes, 2.21 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 41, 44, 43, 48, 53, 49, 50, 69, 58, 62, 64, 61, 65, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 41.6233, Accuracy: 0.5000
+Epoch 4, Loss: 34.5014, Accuracy: 0.5000
+Epoch 6, Loss: 21.5288, Accuracy: 0.5000
+Epoch 8, Loss: 7.1353, Accuracy: 0.4479
+Epoch 10, Loss: 1.1302, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 41 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 49 predicted PD  wavetrains 600
+Patient 50 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 64 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 65 predicted PD  wavetrains 600
+Patient 63 predicted PD  wavetrains 600
+Final accuracy is 95 0.5
+Random data selection interation time: 0 hours, 10 minutes, 54.95 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 46, 48, 47, 41, 42, 45, 43, 57, 56, 68, 61, 59, 62, 58]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 36.9740, Accuracy: 0.5000
+Epoch 4, Loss: 8.1045, Accuracy: 0.5000
+Epoch 6, Loss: 0.7345, Accuracy: 0.4818
+Epoch 8, Loss: 0.6430, Accuracy: 0.5000
+Epoch 10, Loss: 0.6336, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 46 predicted PD  wavetrains 600
+Patient 48 predicted PD  wavetrains 600
+Patient 47 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 45 predicted PD  wavetrains 600
+Patient 43 predicted PD  wavetrains 600
+Patient 57 predicted PD  wavetrains 600
+Patient 56 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Patient 62 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Final accuracy is 96 0.5
+Random data selection interation time: 0 hours, 10 minutes, 51.38 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 48, 42, 54, 41, 44, 53, 46, 67, 68, 58, 69, 61, 60, 59]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.8662, Accuracy: 0.5000
+Epoch 4, Loss: 49.8617, Accuracy: 0.5000
+Epoch 6, Loss: 49.6931, Accuracy: 0.5000
+Epoch 8, Loss: 49.3154, Accuracy: 0.5000
+Epoch 10, Loss: 45.4987, Accuracy: 0.5000
+[[600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0], [600, 0]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 48 predicted PD  wavetrains 600
+Patient 42 predicted PD  wavetrains 600
+Patient 54 predicted PD  wavetrains 600
+Patient 41 predicted PD  wavetrains 600
+Patient 44 predicted PD  wavetrains 600
+Patient 53 predicted PD  wavetrains 600
+Patient 46 predicted PD  wavetrains 600
+Patient 67 predicted PD  wavetrains 600
+Patient 68 predicted PD  wavetrains 600
+Patient 58 predicted PD  wavetrains 600
+Patient 69 predicted PD  wavetrains 600
+Patient 61 predicted PD  wavetrains 600
+Patient 60 predicted PD  wavetrains 600
+Patient 59 predicted PD  wavetrains 600
+Final accuracy is 97 0.5
+Random data selection interation time: 0 hours, 10 minutes, 43.31 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 50, 43, 41, 47, 51, 44, 59, 61, 66, 63, 65, 58, 60]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 47.7516, Accuracy: 0.5000
+Epoch 4, Loss: 46.2955, Accuracy: 0.5000
+Epoch 6, Loss: 41.0222, Accuracy: 0.5000
+Epoch 8, Loss: 26.5842, Accuracy: 0.5000
+Epoch 10, Loss: 9.7375, Accuracy: 0.4998
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [2, 598], [2, 598], [0, 600], [2, 598], [0, 600], [2, 598], [0, 600], [1, 599]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 0
+Patient 50 predicted PD  wavetrains 1
+Patient 43 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 51 predicted PD  wavetrains 0
+Patient 44 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 4
+Patient 66 predicted PD  wavetrains 1
+Patient 63 predicted PD  wavetrains 3
+Patient 65 predicted PD  wavetrains 0
+Patient 58 predicted PD  wavetrains 2
+Patient 60 predicted PD  wavetrains 0
+Final accuracy is 98 0.7142857142857143
+Random data selection interation time: 0 hours, 10 minutes, 43.83 secondes
+22 [55, 70, 71, 72, 73, 74, 75, 76, 54, 48, 46, 53, 47, 41, 52, 61, 67, 56, 60, 66, 59, 63]
+torch.Size([8400, 2, 91])
+torch.Size([8400])
+Batch X shape: torch.Size([512, 2, 91]) type:  <class 'torch.Tensor'>
+Batch Y shape: torch.Size([512])
+Training the model
+Epoch 2, Loss: 49.9772, Accuracy: 0.5000
+Epoch 4, Loss: 49.7893, Accuracy: 0.5000
+Epoch 6, Loss: 49.6461, Accuracy: 0.5000
+Epoch 8, Loss: 49.8386, Accuracy: 0.5000
+Epoch 10, Loss: 49.7809, Accuracy: 0.5000
+[[0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600], [0, 600]] [tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(1.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0.)]
+Patient 54 predicted PD  wavetrains 0
+Patient 48 predicted PD  wavetrains 0
+Patient 46 predicted PD  wavetrains 0
+Patient 53 predicted PD  wavetrains 0
+Patient 47 predicted PD  wavetrains 0
+Patient 41 predicted PD  wavetrains 0
+Patient 52 predicted PD  wavetrains 0
+Patient 61 predicted PD  wavetrains 0
+Patient 67 predicted PD  wavetrains 0
+Patient 56 predicted PD  wavetrains 0
+Patient 60 predicted PD  wavetrains 0
+Patient 66 predicted PD  wavetrains 0
+Patient 59 predicted PD  wavetrains 0
+Patient 63 predicted PD  wavetrains 0
+Final accuracy is 99 0.5
+Random data selection interation time: 0 hours, 10 minutes, 55.25 secondes
+Mean accuracy is 0.5535714285714286, all accuracies [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1.0, 0.5, 0.5, 0.7857142857142857, 0.5, 0.5, 0.5, 0.7142857142857143, 0.8571428571428571, 0.5, 0.5, 0.5, 0.5, 0.7857142857142857, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7142857142857143, 0.5, 0.5, 0.5, 0.5, 0.7857142857142857, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.9285714285714286, 0.5, 0.6428571428571429, 0.8571428571428571, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7142857142857143, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7857142857142857, 0.7857142857142857, 0.5, 0.5, 0.5, 0.7142857142857143, 0.5, 0.7142857142857143, 0.5, 0.5, 0.7857142857142857, 0.7857142857142857, 0.5, 0.5, 0.5, 0.5, 0.5714285714285714, 0.5, 0.5, 0.7142857142857143, 0.5, 0.5, 0.5, 0.5, 0.7142857142857143, 0.5]

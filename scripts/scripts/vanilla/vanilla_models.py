@@ -80,6 +80,7 @@ def main():
     features_tensor = torch.tensor(combined_features, dtype=torch.float32).T   # Convert features to tensor
     labels_tensor = torch.tensor(y, dtype=torch.float)  # Convert labels to tensor
 
+
     #  Create a TensorDataset
     dataset = TensorDataset(features_tensor, labels_tensor)
 
@@ -87,45 +88,46 @@ def main():
     batch_size = batch_size  # Define your batch size
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     
-    # for x, y in dataloader:
-    #     print(x.shape)
-    #     print(y.shape)
-    #     break
-
-    model=SimpleBinaryClassifier(input_dim=14)
-    # train_model(model, dataloader, num_epochs=num_epochs, path=save_path+'/vanilla_14.pth')
-    model = torch.load(save_path+'/vanilla_14.pth', weights_only=False)
-    # now let's try to run the tests
+    # now let's prepare features to run the tests
     PDL_features =  np.swapaxes(np.swapaxes(PDL_features, 0, 1), 1,2)
     ETL_features =  np.swapaxes(np.swapaxes(ETL_features, 0, 1),1,2)
-    pdl_classif = viz.viz_quantity_features(PDL_features, 'PDL', model,save_path+'/PDL_quant_14_')
-    etl_classif = viz.viz_quantity_features(ETL_features, 'ETL', model,save_path+'/ETL_quant_14_')
+    youden_j_stack = [0,1,2,3,4,5,10,50,100]
+    for i, num_epochs in enumerate([0, 1,2,3,4,5,10,50,100]):
+        model=SimpleBinaryClassifier(input_dim=14)
+        train_model(model, dataloader, num_epochs=num_epochs, path=save_path+'/vanilla_14.pth')
+        if i!=0:
+            model = torch.load(save_path+'/vanilla_14.pth', weights_only=False)
+        else:
+            print('\n No model, check again')
+        pdl_classif = viz.viz_quantity_features(PDL_features, 'PDL', model,save_path+'/PDL_quant_14_')
+        etl_classif = viz.viz_quantity_features(ETL_features, 'ETL', model,save_path+'/ETL_quant_14_')
 
-    # make classification using Youden's  and histograms
-    # Example arrays, using the first column for classification
-    pdl_classif = pdl_classif[:, 0]  # Get first column
-    etl_classif = etl_classif[:, 0]  # Get first column
+        # make classification using Youden's  and histograms
+        # Example arrays, using the first column for classification
+        pdl_classif = pdl_classif[:, 0]  # Get first column
+        etl_classif = etl_classif[:, 0]  # Get first column
 
-    # Concatenate data and create labels
-    all_histograms = np.concatenate((pdl_classif, etl_classif))
-    print(all_histograms)
-    all_labels = np.array([1]*len(pdl_classif) + [0]*len(etl_classif))
+        # Concatenate data and create labels
+        all_histograms = np.concatenate((pdl_classif, etl_classif))
+        print(all_histograms)
+        all_labels = np.array([1]*len(pdl_classif) + [0]*len(etl_classif))
 
-    # Calculate ROC curve to find sensitivity, specificity, and thresholds
-    fpr, tpr, thresholds = roc_curve(all_labels, all_histograms)
+        # Calculate ROC curve to find sensitivity, specificity, and thresholds
+        fpr, tpr, thresholds = roc_curve(all_labels, all_histograms)
 
-    # Calculate Youden's J statistic
-    youden_j = tpr - fpr  # Sensitivity + Specificity - 1
+        # Calculate Youden's J statistic
+        youden_j = tpr - fpr  # Sensitivity + Specificity - 1
 
-    # Find the index with the maximum Youden's J
-    optimal_idx = np.argmax(youden_j)
-    optimal_threshold = thresholds[optimal_idx]
+        # Find the index with the maximum Youden's J
+        optimal_idx = np.argmax(youden_j)
+        optimal_threshold = thresholds[optimal_idx]
 
-    print(f"Optimal Threshold: {optimal_threshold}")
-    print(f"Maximum Youden's J statistic: {youden_j[optimal_idx]}")
+        print(f"Optimal Threshold: {optimal_threshold}")
+        print(f"Maximum Youden's J statistic: {youden_j[optimal_idx]}")
 
 
-    viz.plot_joudens(pdl_classif, etl_classif, optimal_threshold, thresholds, youden_j, optimal_idx, save_path+'/Jouden_threshold')
-
+        viz.plot_joudens(pdl_classif, etl_classif, optimal_threshold, thresholds, youden_j, optimal_idx, save_path+f'/Jouden_threshold_{num_epochs}')
+        youden_j_stack[i]= youden_j[optimal_idx]
+    print(f'Epochs: [0,1,2,3,4,5,10,50,100] {youden_j_stack}')
 if __name__ == "__main__":
     main()

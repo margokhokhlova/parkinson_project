@@ -64,7 +64,7 @@ def main():
 
     # Output shapes
     print("Combined features shape:", combined_features.shape)  # Shape (14, 15*600 + 21*600)
-    print("y shape:", y.shape)  
+    print("y shape:", y.shape)
 
 
     #  Convert numpy arrays to torch tensors
