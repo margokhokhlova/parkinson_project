@@ -363,31 +363,28 @@ class EnhancedBinaryClassifier(nn.Module):
 
 
 class MultiHeadPairsNN(nn.Module):
-    def __init__(self, input_dim, hidden_dim=16, num_heads=91, num_layers=1, merge_opt = 'merge'):
+    def __init__(self, input_dim, hidden_dim=16, num_heads=91, num_layers=1, merge_opt='merge'):
         super(MultiHeadPairsNN, self).__init__()
         
         self.num_heads = num_heads
         self.num_layers = num_layers
+        self.merge_opt = merge_opt
         
-        # Define a head for each feature dimension with a variable number of layers
+        # Define heads
         self.heads = nn.ModuleList([
             self._build_head(input_dim, hidden_dim, num_layers) for _ in range(num_heads)
         ])
         
-        # Layer to combine features from all heads
+        # Learnable weights
+        self.head_weights = nn.Parameter(torch.randn(self.num_heads) * 0.01)  # Small random initialization
+        
+        # Merge layer for concatenation
         self.fc_merge = nn.Linear(hidden_dim * num_heads, hidden_dim)
         
-        # Final output layer for binary classification
+        # Final classification
         self.fc_final = nn.Linear(hidden_dim, 1)
-        self.merge_opt = merge_opt
-        self.head_weights = nn.Parameter(torch.ones(self.num_heads))  # Learnable weights
 
-
-    
     def _build_head(self, input_dim, hidden_dim, num_layers):
-        """
-        Helper function to build a head with the specified number of layers.
-        """
         layers = []
         for i in range(num_layers):
             in_dim = input_dim if i == 0 else hidden_dim
@@ -396,32 +393,30 @@ class MultiHeadPairsNN(nn.Module):
         return nn.Sequential(*layers)
     
     def forward(self, x):
-		# Split the input into 91 pairs along the last dimension
-		# Each pair has shape [N, 2]
-        pair_inputs = torch.unbind(x, dim=-1)  # This creates a list of 91 tensors of shape [N, 2]
-
-        # Pass input through each head
+        pair_inputs = torch.unbind(x, dim=-1)  # List of [batch_size, input_dim]
         head_outputs = [head(pair_input) for head, pair_input in zip(self.heads, pair_inputs)]
-
-        # Concatenate outputs from all heads - only for concat, skipped if log sum
-        merged_output = torch.cat(head_outputs, dim=1)
-		# Combine the list of tensors into a single tensor along the head dimension
-        head_outputs = torch.stack(head_outputs, dim=1)  # Shape: [batch_size, num_heads, hidden_dim]
-        if self.merge_opt == 'logsum':
-			# Compute the sum of logarithms across the `num_heads` dimension
-            log_outputs = torch.log(1 + head_outputs)  # Add 1 to avoid log(0)
-            summed_logs = torch.sum(log_outputs, dim=1)  # Sum over the `num_heads` dimension
-			# Final classification
-            return torch.sigmoid(self.fc_final(summed_logs))
-        elif self.merge_opt == 'merge':
-        # # # Merge features
-            merged_output = self.fc_merge(merged_output)
-            return torch.sigmoid(self.fc_final(merged_output))
-        elif self.merge_opt == 'weighted':
-			# Apply learnable weights to the head outputs
-            weighted_outputs = torch.sum(head_outputs * self.head_weights.view(1, -1, 1), dim=1)  # Shape: [batch_size, hidden_dim]
-            # Final classification
+        head_outputs = torch.stack(head_outputs, dim=1)  # [batch_size, num_heads, hidden_dim]
+        
+        if self.merge_opt == 'weighted':
+            # Weighted sum with normalized weights
+            normalized_weights = torch.softmax(self.head_weights, dim=0)
+            weighted_outputs = torch.sum(head_outputs * normalized_weights.view(1, -1, 1), dim=1)
             return torch.sigmoid(self.fc_final(weighted_outputs))
+        
+        elif self.merge_opt == 'logsum':
+            # Logarithmic sum
+            log_outputs = torch.log1p(head_outputs)
+            summed_logs = torch.sum(log_outputs, dim=1)
+            return torch.sigmoid(self.fc_final(summed_logs))
+        
+        elif self.merge_opt == 'merge':
+            # Concatenate outputs from all heads along the feature dimension
+            merged_output = head_outputs.view(head_outputs.size(0), -1)  # Shape: [batch_size, num_heads * hidden_dim]
+            merged_output = self.fc_merge(merged_output)  # Apply the merge layer
+            return torch.sigmoid(self.fc_final(merged_output))
+        else:
+            raise ValueError("Invalid merge option specified.")
+	
 
 	# def forward(self, features):
 	# 	"""
