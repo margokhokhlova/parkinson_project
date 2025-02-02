@@ -12,13 +12,13 @@ sys.path.append('scripts/scripts/')
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-
+import pdb
 
 
 from feature_selection import get_feature
 # from stack_features import stack_feature_lists, get_all_features_per_patient
 
-from models import SimpleNN, train_model
+from models import  train_model
 
 def load_config(config_file):
     with open(config_file, 'r') as file:
@@ -26,21 +26,17 @@ def load_config(config_file):
     return config
 
 
-class SimpleRNN(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, num_layers=1):
-        super(SimpleRNN, self).__init__()
-        self.rnn = nn.RNN(input_size, hidden_size, num_layers, batch_first=True)
-        self.fc = nn.Linear(hidden_size, output_size)
-        self.sigmoid = nn.Sigmoid()  # Apply sigmoid for binary classification
-        self.hidden_size = hidden_size
+class SimpleBiLSTM(nn.Module):
+    def __init__(self, input_size, hidden_size=32, output_size=1, num_layers=1):
+        super(SimpleBiLSTM, self).__init__()
+        self.bilstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True, bidirectional=True)
+        self.fc = nn.Linear(hidden_size * 2, output_size)  # *2 because of bidirectionality
         
     def forward(self, x):
-        h_0 = torch.zeros(1, x.size(0), self.hidden_size).to(x.device)  # Initial hidden state
-        out, _ = self.rnn(x, h_0)  # Pass through RNN layer
-        out = out[:, -1, :]  # Get the last time step's output
-        out = self.fc(out)   # Pass through the final fully connected layer
-        out = self.sigmoid(out)  # Apply sigmoid for binary classification
-        return out
+        out, _ = self.bilstm(x)  # BiLSTM output
+        out = out[:, -1, :]  # Take the last time step's output
+        out = self.fc(out)  # Fully connected layer
+        return out  # No sigmoid, use BCEWithLogitsLoss for numerical stability
 
 # Custom dataset for gait data
 class GaitDataset(Dataset):
@@ -93,23 +89,24 @@ def main():
     print(f"Feature_names: {feature_names}")
 
 
-    new_path=save_path+f'/vanilla_rnn'  
+    new_path=save_path+f'/vanilla_bilstm'  
     if not os.path.exists(new_path):
         os.makedirs(new_path)
 
-
+    current_feat = [0,1,2,3,4,5,6,8,9,12,13]
+    num_feat = len(current_feat)
     # Initialize lists to store the features and labels
-    PDL_features = [0]*14
-    ETL_features = [0]*14     
-    num_feat = len(range(14))
-        
-    for j in range(14):
+    PDL_features = [0]*num_feat
+    ETL_features = [0]*num_feat    
+
+    #     All but left, right, timeSignal.    
+    for i, j in enumerate(current_feat):
         Xf1_PDL, Xf1_ETL = get_feature(j,data_path= data_path,  min_len_established = 600, skip_patients = [55, 70,71,72,73,74,75,76])
         Xf1_PDL = np.array(Xf1_PDL)  # Shape: (14, 600)
         Xf1_ETL = np.array(Xf1_ETL)  # Shape: (14, 600)
         #print(Xf1_ETL.shape)
-        PDL_features[j]= Xf1_PDL
-        ETL_features[j]= Xf1_ETL         
+        PDL_features[i]= Xf1_PDL
+        ETL_features[i]= Xf1_ETL         
     
     PDL_features = np.array(PDL_features)  # Shape (14, 14, 600)
     PDL_features = np.transpose(PDL_features, (1, 0, 2))  # Shape (14, 14, 600)
@@ -137,18 +134,19 @@ def main():
 
         #min max normalization for the features for TRAIN
         all_train = np.concatenate((PDL_features[train_indices], ETL_features[train_indices]), axis=0) 
-
-        all_train =torch.tensor(all_train) #N train, 14,600
+        all_train =torch.tensor(all_train) #N train, (14 samples, 11 features, 600 length)
         # Step 1: Reshape to combine patients and time dimensions for feature normalization
-        reshaped_features = all_train.permute(1, 0, 2).reshape(14, -1)  # Shape: (14, N train *600)
+        reshaped_features = all_train.permute(1, 0, 2).reshape(num_feat, -1)  # Shape: (features, N train *600)
 
         # Step 2: Compute min and max values for each feature
-        min_values = reshaped_features.min(dim=1, keepdim=True).values  # Shape: (14, 1)
-        max_values = reshaped_features.max(dim=1, keepdim=True).values  # Shape: (14, 1)
+        min_values = reshaped_features.min(dim=1, keepdim=True).values  # Shape: (features, 1)
+        max_values = reshaped_features.max(dim=1, keepdim=True).values  # Shape: (features, 1)
 
         normalized_features_train  = (reshaped_features - min_values) / (max_values - min_values + 1e-8)  # Avoid division by zero
         normalized_features_train = normalized_features_train.reshape(num_feat, len(train_indices)*2, 600) # back to features, N train samples, length
         normalized_features_train  = normalized_features_train.permute(1, 0, 2) # reshape back swipping Features & N => N, F, L
+
+        assert np.allclose(all_train, reshaped_features.reshape(num_feat, len(train_indices)*2, 600).permute(1, 0, 2)), "Arrays are not close enough"
 
         PDL_train = normalized_features_train[:len(train_indices),:,:]
         ETL_train =  normalized_features_train[len(train_indices):,:,:]
@@ -156,7 +154,7 @@ def main():
         #min max normalization for the features for TEST
         all_test = np.concatenate((PDL_features[test_indices], ETL_features[test_indices]), axis=0) 
         all_test =torch.tensor(all_test)
-        reshaped_features_test = all_test.permute(1, 0, 2).reshape(14, -1)  # Shape: (14, 14*600)
+        reshaped_features_test = all_test.permute(1, 0, 2).reshape(num_feat, -1)  # Shape: (14, 14*600)
         normalized_features_test = (reshaped_features_test - min_values) / (max_values - min_values + 1e-8)  # Avoid division by zero
         normalized_features_test = normalized_features_test.reshape(num_feat, len(test_indices)*2, 600) 
         normalized_features_test  = normalized_features_test.permute(1, 0, 2) # reshape back
@@ -170,17 +168,17 @@ def main():
         dataloader = DataLoader(gait_dataset_train, batch_size=4, shuffle=True)
 
         # Model parameters
-        input_size = 14  # Number of features
-        hidden_size = 16 # Hidden size for RNN
+        input_size = 11 # Number of features
+        hidden_size = 4  # Hidden size 
         output_size = 1   # Binary classification (PDL or ETL)
-        num_epochs = 100
+        num_epochs = 120
 
-        model = SimpleRNN(input_size, hidden_size, output_size)
+        model = SimpleBiLSTM(input_size, hidden_size, output_size)
 
 
             # Training setup
-        criterion = nn.BCELoss()  # Binary Cross Entropy Loss for binary classification
-        optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+        criterion = nn.BCEWithLogitsLoss()  # Binary Cross Entropy Loss for binary classification
+        optimizer = torch.optim.Adam(model.parameters(), lr=0.005)
 
         # Training loop
 

@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import pdb
 
 def get_feature(index_f, data_path = 'C:/Users/khokhlovam/Documents/kotelnikov/data/data_lstm_august24_PDET_left_right.csv', min_len_established = None, skip_patients = [55, 70,71,72,73,74,75,76]):
     df= pd.read_csv(data_path, header=None, names=range(2150)) # 
